@@ -1,0 +1,371 @@
+[
+    {
+        "zipcode": "85003",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 73,
+        "population": 8998,
+        "restaurants": 275,
+        "restaurant_average": 12.0
+    },
+    {
+        "zipcode": "85004",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 78,
+        "population": 5290,
+        "restaurants": 319,
+        "restaurant_average": 9.0
+    },
+    {
+        "zipcode": "85006",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 64,
+        "population": 25338,
+        "restaurants": 176,
+        "restaurant_average": 2.0
+    },
+    {
+        "zipcode": "85007",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 60,
+        "population": 14191,
+        "restaurants": 109,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "85008",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 51,
+        "population": 55709,
+        "restaurants": 222,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "85009",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 46,
+        "population": 52073,
+        "restaurants": 188,
+        "restaurant_average": 0.8
+    },
+    {
+        "zipcode": "85012",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 66,
+        "population": 6329,
+        "restaurants": 198,
+        "restaurant_average": 2.0
+    },
+    {
+        "zipcode": "85013",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 62,
+        "population": 19562,
+        "restaurants": 167,
+        "restaurant_average": 2.0
+    },
+    {
+        "zipcode": "85014",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 60,
+        "population": 24715,
+        "restaurants": 217,
+        "restaurant_average": 2.0
+    },
+    {
+        "zipcode": "85015",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 53,
+        "population": 38220,
+        "restaurants": 138,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "85016",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 57,
+        "population": 34536,
+        "restaurants": 277,
+        "restaurant_average": 0.8
+    },
+    {
+        "zipcode": "85017",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 52,
+        "population": 39070,
+        "restaurants": 170,
+        "restaurant_average": 3.0
+    },
+    {
+        "zipcode": "85018",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 52,
+        "population": 35788,
+        "restaurants": 215,
+        "restaurant_average": 0.8
+    },
+    {
+        "zipcode": "85019",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 48,
+        "population": 25190,
+        "restaurants": 143,
+        "restaurant_average": 0.5
+    },
+    {
+        "zipcode": "85020",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 52,
+        "population": 33375,
+        "restaurants": null,
+        "restaurant_average": null
+    },
+    {
+        "zipcode": "85021",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 51,
+        "population": 36547,
+        "restaurants": 142,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "85022",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 42,
+        "population": 45804,
+        "restaurants": 172,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "85023",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 36,
+        "population": 32310,
+        "restaurants": 97,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "85024",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 22,
+        "population": 22485,
+        "restaurants": 43,
+        "restaurant_average": 0.9
+    },
+    {
+        "zipcode": "85027",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 26,
+        "population": 45410,
+        "restaurants": 158,
+        "restaurant_average": 0.7
+    },
+    {
+        "zipcode": "85028",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 35,
+        "population": 20116,
+        "restaurants": 121,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "85029",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 41,
+        "population": 42971,
+        "restaurants": 159,
+        "restaurant_average": 0.3
+    },
+    {
+        "zipcode": "85031",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 48,
+        "population": 29645,
+        "restaurants": 101,
+        "restaurant_average": 0.9
+    },
+    {
+        "zipcode": "85032",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 48,
+        "population": 64339,
+        "restaurants": 262,
+        "restaurant_average": 2.0
+    },
+    {
+        "zipcode": "85033",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 43,
+        "population": 52594,
+        "restaurants": 119,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "85034",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 61,
+        "population": 5831,
+        "restaurants": 184,
+        "restaurant_average": 2.0
+    },
+    {
+        "zipcode": "85035",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 41,
+        "population": 49493,
+        "restaurants": 154,
+        "restaurant_average": 0.8
+    },
+    {
+        "zipcode": "85037",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 29,
+        "population": 43206,
+        "restaurants": 120,
+        "restaurant_average": 0.2
+    },
+    {
+        "zipcode": "85040",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 44,
+        "population": 29326,
+        "restaurants": 116,
+        "restaurant_average": 0.7
+    },
+    {
+        "zipcode": "85041",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 38,
+        "population": 53639,
+        "restaurants": 95,
+        "restaurant_average": 0.3
+    },
+    {
+        "zipcode": "85042",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 35,
+        "population": 41629,
+        "restaurants": 110,
+        "restaurant_average": 0.2
+    },
+    {
+        "zipcode": "85043",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 21,
+        "population": 34332,
+        "restaurants": 89,
+        "restaurant_average": 0.3
+    },
+    {
+        "zipcode": "85044",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 36,
+        "population": 38496,
+        "restaurants": 194,
+        "restaurant_average": 0.0
+    },
+    {
+        "zipcode": "85045",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 3,
+        "population": 7777,
+        "restaurants": 1,
+        "restaurant_average": 0.7
+    },
+    {
+        "zipcode": "85050",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 22,
+        "population": 25957,
+        "restaurants": 64,
+        "restaurant_average": 0.2
+    },
+    {
+        "zipcode": "85051",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 50,
+        "population": 40274,
+        "restaurants": 187,
+        "restaurant_average": 0.7
+    },
+    {
+        "zipcode": "85053",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 46,
+        "population": 28866,
+        "restaurants": null,
+        "restaurant_average": null
+    },
+    {
+        "zipcode": "85054",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 14,
+        "population": 2935,
+        "restaurants": 120,
+        "restaurant_average": 0.9
+    },
+    {
+        "zipcode": "85085",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 8,
+        "population": 11179,
+        "restaurants": 33,
+        "restaurant_average": 0.0
+    },
+    {
+        "zipcode": "85254",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 34,
+        "population": 43515,
+        "restaurants": 305,
+        "restaurant_average": 0.1
+    },
+    {
+        "zipcode": "85310",
+        "city": "Phoenix",
+        "state": "AZ",
+        "walk_score": 20,
+        "population": 28083,
+        "restaurants": 41,
+        "restaurant_average": 0.0
+    }
+]

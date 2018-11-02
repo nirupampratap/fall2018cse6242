@@ -1,0 +1,1420 @@
+{
+    "walk_score": 41,
+    "transit_score": 36,
+    "bike_score": 52,
+    "population": 1445632,
+    "restaurants": 4208,
+    "restaurant_average": 2.0,
+    "neighborhoods": [
+        {
+            "rank": "1",
+            "name": "Downtown",
+            "walk_score": "84",
+            "transit_score": " 63 ",
+            "bike_score": " 70 "
+        },
+        {
+            "rank": "2",
+            "name": "Booker T. Washington",
+            "walk_score": "74",
+            "transit_score": " 61 ",
+            "bike_score": " 60 "
+        },
+        {
+            "rank": "3",
+            "name": "Eastlake Park",
+            "walk_score": "72",
+            "transit_score": " 59 ",
+            "bike_score": " 63 "
+        },
+        {
+            "rank": "4",
+            "name": "Governmental Mall",
+            "walk_score": "69",
+            "transit_score": " 56 ",
+            "bike_score": " 66 "
+        },
+        {
+            "rank": "5",
+            "name": "New Northtown",
+            "walk_score": "69",
+            "transit_score": " 47 ",
+            "bike_score": " 71 "
+        },
+        {
+            "rank": "6",
+            "name": "Garfield",
+            "walk_score": "69",
+            "transit_score": " 56 ",
+            "bike_score": " 65 "
+        },
+        {
+            "rank": "7",
+            "name": "Coronado",
+            "walk_score": "68",
+            "transit_score": " 49 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "8",
+            "name": "North Central Heights",
+            "walk_score": "68",
+            "transit_score": " 49 ",
+            "bike_score": " 67 "
+        },
+        {
+            "rank": "9",
+            "name": "Westland Homesites",
+            "walk_score": "68",
+            "transit_score": " 41 ",
+            "bike_score": " 63 "
+        },
+        {
+            "rank": "10",
+            "name": "Southland",
+            "walk_score": "65",
+            "transit_score": " 45 ",
+            "bike_score": " 61 "
+        },
+        {
+            "rank": "11",
+            "name": "Foothill Acres",
+            "walk_score": "65",
+            "transit_score": " 47 ",
+            "bike_score": " 71 "
+        },
+        {
+            "rank": "12",
+            "name": "Montezuma Heights",
+            "walk_score": "64",
+            "transit_score": " 52 ",
+            "bike_score": " 72 "
+        },
+        {
+            "rank": "13",
+            "name": "Valencia Acres",
+            "walk_score": "64",
+            "transit_score": " 47 ",
+            "bike_score": " 69 "
+        },
+        {
+            "rank": "14",
+            "name": "Bel Air",
+            "walk_score": "63",
+            "transit_score": " 46 ",
+            "bike_score": " 86 "
+        },
+        {
+            "rank": "15",
+            "name": "Willo",
+            "walk_score": "63",
+            "transit_score": " 57 ",
+            "bike_score": " 72 "
+        },
+        {
+            "rank": "16",
+            "name": "Story",
+            "walk_score": "62",
+            "transit_score": " 49 ",
+            "bike_score": " 88 "
+        },
+        {
+            "rank": "17",
+            "name": "East Morningside",
+            "walk_score": "62",
+            "transit_score": " 42 ",
+            "bike_score": " 64 "
+        },
+        {
+            "rank": "18",
+            "name": "Handell Villa",
+            "walk_score": "61",
+            "transit_score": " 52 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "19",
+            "name": "Wormsers",
+            "walk_score": "61",
+            "transit_score": " 42 ",
+            "bike_score": " 69 "
+        },
+        {
+            "rank": "20",
+            "name": "Palm Acres",
+            "walk_score": "60",
+            "transit_score": " 45 ",
+            "bike_score": " 61 "
+        },
+        {
+            "rank": "21",
+            "name": "La Mancha",
+            "walk_score": "60",
+            "transit_score": " 52 ",
+            "bike_score": " 60 "
+        },
+        {
+            "rank": "22",
+            "name": "Laurelwood",
+            "walk_score": "60",
+            "transit_score": " 46 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "23",
+            "name": "Central City South",
+            "walk_score": "59",
+            "transit_score": " 47 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "24",
+            "name": "East Citrus Acres",
+            "walk_score": "59",
+            "transit_score": " 41 ",
+            "bike_score": " 76 "
+        },
+        {
+            "rank": "25",
+            "name": "Patio Homes East",
+            "walk_score": "59",
+            "transit_score": " 42 ",
+            "bike_score": " 65 "
+        },
+        {
+            "rank": "26",
+            "name": "Northwest Village",
+            "walk_score": "59",
+            "transit_score": " 40 ",
+            "bike_score": " 46 "
+        },
+        {
+            "rank": "27",
+            "name": "Citrus Acres",
+            "walk_score": "58",
+            "transit_score": " 43 ",
+            "bike_score": " 75 "
+        },
+        {
+            "rank": "28",
+            "name": "Northwest Homesites",
+            "walk_score": "58",
+            "transit_score": " 42 ",
+            "bike_score": " 57 "
+        },
+        {
+            "rank": "29",
+            "name": "Sun Sand",
+            "walk_score": "57",
+            "transit_score": " 32 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "30",
+            "name": "Phoenix Country Club",
+            "walk_score": "57",
+            "transit_score": " 50 ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "31",
+            "name": "Sunset Acres",
+            "walk_score": "56",
+            "transit_score": " 43 ",
+            "bike_score": " 61 "
+        },
+        {
+            "rank": "32",
+            "name": "North East Village",
+            "walk_score": "56",
+            "transit_score": " 41 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "33",
+            "name": "Phillipine",
+            "walk_score": "56",
+            "transit_score": " 55 ",
+            "bike_score": " 50 "
+        },
+        {
+            "rank": "34",
+            "name": "Mission Manor",
+            "walk_score": "56",
+            "transit_score": " 40 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "35",
+            "name": "Vista Income Estates",
+            "walk_score": "55",
+            "transit_score": " 46 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "36",
+            "name": "West Phoenix",
+            "walk_score": "55",
+            "transit_score": " 40 ",
+            "bike_score": " 62 "
+        },
+        {
+            "rank": "37",
+            "name": "Kierland",
+            "walk_score": "55",
+            "transit_score": " 36 ",
+            "bike_score": " 60 "
+        },
+        {
+            "rank": "38",
+            "name": "Greenfield Acres",
+            "walk_score": "54",
+            "transit_score": " 47 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "39",
+            "name": "Villages of Laveen Ranch",
+            "walk_score": "53",
+            "transit_score": " 30 ",
+            "bike_score": " 40 "
+        },
+        {
+            "rank": "40",
+            "name": "Cactus Gardens",
+            "walk_score": "53",
+            "transit_score": " 35 ",
+            "bike_score": " 64 "
+        },
+        {
+            "rank": "41",
+            "name": "Del Rey",
+            "walk_score": "53",
+            "transit_score": " 45 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "42",
+            "name": "Camelback Gardens",
+            "walk_score": "53",
+            "transit_score": " 53 ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "43",
+            "name": "Meadowbrook",
+            "walk_score": "53",
+            "transit_score": " 44 ",
+            "bike_score": " 72 "
+        },
+        {
+            "rank": "44",
+            "name": "Park Place North",
+            "walk_score": "52",
+            "transit_score": " 36 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "45",
+            "name": "Winona Park",
+            "walk_score": "52",
+            "transit_score": " 41 ",
+            "bike_score": " 59 "
+        },
+        {
+            "rank": "46",
+            "name": "Papago Vista",
+            "walk_score": "52",
+            "transit_score": " 38 ",
+            "bike_score": " 65 "
+        },
+        {
+            "rank": "47",
+            "name": "Del Monte Village North",
+            "walk_score": "52",
+            "transit_score": " 44 ",
+            "bike_score": " 59 "
+        },
+        {
+            "rank": "48",
+            "name": "Sweetwater",
+            "walk_score": "52",
+            "transit_score": " 39 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "49",
+            "name": "Desert Pines",
+            "walk_score": "52",
+            "transit_score": " 37 ",
+            "bike_score": " 50 "
+        },
+        {
+            "rank": "50",
+            "name": "Surrey Heights",
+            "walk_score": "51",
+            "transit_score": " 42 ",
+            "bike_score": " 60 "
+        },
+        {
+            "rank": "51",
+            "name": "Campo Bello",
+            "walk_score": "51",
+            "transit_score": " 40 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "52",
+            "name": "Westwood Estates",
+            "walk_score": "51",
+            "transit_score": " 45 ",
+            "bike_score": " 78 "
+        },
+        {
+            "rank": "53",
+            "name": "Sungold",
+            "walk_score": "51",
+            "transit_score": " 38 ",
+            "bike_score": " 59 "
+        },
+        {
+            "rank": "54",
+            "name": "Paradise Valley Oasis",
+            "walk_score": "51",
+            "transit_score": " 39 ",
+            "bike_score": " 72 "
+        },
+        {
+            "rank": "55",
+            "name": "Pomelo Park",
+            "walk_score": "50",
+            "transit_score": " 46 ",
+            "bike_score": " 71 "
+        },
+        {
+            "rank": "56",
+            "name": "Hacienda Granada",
+            "walk_score": "50",
+            "transit_score": " 37 ",
+            "bike_score": " 79 "
+        },
+        {
+            "rank": "57",
+            "name": "Seven Palms Mobile Home Estates",
+            "walk_score": "50",
+            "transit_score": " 37 ",
+            "bike_score": " 69 "
+        },
+        {
+            "rank": "58",
+            "name": "Siesta Village",
+            "walk_score": "49",
+            "transit_score": " 42 ",
+            "bike_score": " 59 "
+        },
+        {
+            "rank": "59",
+            "name": "Southern East",
+            "walk_score": "49",
+            "transit_score": " 37 ",
+            "bike_score": " 67 "
+        },
+        {
+            "rank": "60",
+            "name": "Deerview",
+            "walk_score": "49",
+            "transit_score": " 41 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "61",
+            "name": "Cimarron Ridge",
+            "walk_score": "48",
+            "transit_score": " 39 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "62",
+            "name": "Orangedale Place",
+            "walk_score": "48",
+            "transit_score": " 36 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "63",
+            "name": "Alta Vista",
+            "walk_score": "48",
+            "transit_score": " 41 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "64",
+            "name": "Ryland at Heritage Point",
+            "walk_score": "47",
+            "transit_score": " 0 ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "65",
+            "name": "Park Meadows",
+            "walk_score": "47",
+            "transit_score": " 38 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "66",
+            "name": "Healy%27s Dutchtown",
+            "walk_score": "47",
+            "transit_score": " 37 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "67",
+            "name": "Melrose Paradise",
+            "walk_score": "47",
+            "transit_score": " 37 ",
+            "bike_score": " 64 "
+        },
+        {
+            "rank": "68",
+            "name": "Ben-Jo Estates",
+            "walk_score": "47",
+            "transit_score": " 45 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "69",
+            "name": "Stardust Skies",
+            "walk_score": "46",
+            "transit_score": " 40 ",
+            "bike_score": " 46 "
+        },
+        {
+            "rank": "70",
+            "name": "Woodridge",
+            "walk_score": "46",
+            "transit_score": " 38 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "71",
+            "name": "Maryvale Park",
+            "walk_score": "46",
+            "transit_score": " 40 ",
+            "bike_score": " 56 "
+        },
+        {
+            "rank": "72",
+            "name": "Nuestro Barrio",
+            "walk_score": "46",
+            "transit_score": " 41 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "73",
+            "name": "Park Phoenix",
+            "walk_score": "46",
+            "transit_score": " 43 ",
+            "bike_score": " 46 "
+        },
+        {
+            "rank": "74",
+            "name": "Northview Acres",
+            "walk_score": "46",
+            "transit_score": " 39 ",
+            "bike_score": " 66 "
+        },
+        {
+            "rank": "75",
+            "name": "Raintree Gardens",
+            "walk_score": "45",
+            "transit_score": " 44 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "76",
+            "name": "Newcastle Village",
+            "walk_score": "45",
+            "transit_score": " 39 ",
+            "bike_score": " 62 "
+        },
+        {
+            "rank": "77",
+            "name": "Southern Views",
+            "walk_score": "45",
+            "transit_score": " 40 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "78",
+            "name": "Thunderbird Village",
+            "walk_score": "45",
+            "transit_score": " 40 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "79",
+            "name": "Encanto Village",
+            "walk_score": "45",
+            "transit_score": " 44 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "80",
+            "name": "Fruitland Acres",
+            "walk_score": "45",
+            "transit_score": " 41 ",
+            "bike_score": " 69 "
+        },
+        {
+            "rank": "81",
+            "name": "Pointe Tapatio",
+            "walk_score": "45",
+            "transit_score": " 35 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "82",
+            "name": "Broadway Estates",
+            "walk_score": "44",
+            "transit_score": " 43 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "83",
+            "name": "Wier Estates",
+            "walk_score": "43",
+            "transit_score": " 44 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "84",
+            "name": "Country Gables",
+            "walk_score": "43",
+            "transit_score": " 40 ",
+            "bike_score": " 47 "
+        },
+        {
+            "rank": "85",
+            "name": "Estrella Northwest",
+            "walk_score": "43",
+            "transit_score": " 41 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "86",
+            "name": "Del Monte Village",
+            "walk_score": "43",
+            "transit_score": " 43 ",
+            "bike_score": " 60 "
+        },
+        {
+            "rank": "87",
+            "name": "Country Life Homes",
+            "walk_score": "43",
+            "transit_score": " 41 ",
+            "bike_score": " 43 "
+        },
+        {
+            "rank": "88",
+            "name": "Willows West",
+            "walk_score": "43",
+            "transit_score": " 40 ",
+            "bike_score": " 40 "
+        },
+        {
+            "rank": "89",
+            "name": "North Ranch",
+            "walk_score": "42",
+            "transit_score": " 28 ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "90",
+            "name": "Sandahl Homes",
+            "walk_score": "42",
+            "transit_score": " 37 ",
+            "bike_score": " 56 "
+        },
+        {
+            "rank": "91",
+            "name": "Perry Estates",
+            "walk_score": "42",
+            "transit_score": " 36 ",
+            "bike_score": " 41 "
+        },
+        {
+            "rank": "92",
+            "name": "Estrella Mountain Village",
+            "walk_score": "41",
+            "transit_score": " 32 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "93",
+            "name": "Brandywine",
+            "walk_score": "41",
+            "transit_score": " 40 ",
+            "bike_score": " 39 "
+        },
+        {
+            "rank": "94",
+            "name": "Sunset Knoll",
+            "walk_score": "41",
+            "transit_score": " 44 ",
+            "bike_score": " 47 "
+        },
+        {
+            "rank": "95",
+            "name": "Knoell Royal Oaks",
+            "walk_score": "41",
+            "transit_score": " 39 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "96",
+            "name": "Lake Biltmore Village",
+            "walk_score": "41",
+            "transit_score": " 38 ",
+            "bike_score": " 67 "
+        },
+        {
+            "rank": "97",
+            "name": "Black Canyon Heights",
+            "walk_score": "40",
+            "transit_score": " 38 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "98",
+            "name": "Village at West Meadow",
+            "walk_score": "40",
+            "transit_score": " 39 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "99",
+            "name": "Sundance Ranch",
+            "walk_score": "39",
+            "transit_score": " 26 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "100",
+            "name": "Bellair",
+            "walk_score": "39",
+            "transit_score": " 34 ",
+            "bike_score": " 50 "
+        },
+        {
+            "rank": "101",
+            "name": "Arizona Homes",
+            "walk_score": "39",
+            "transit_score": " 40 ",
+            "bike_score": " 41 "
+        },
+        {
+            "rank": "102",
+            "name": "Continental North",
+            "walk_score": "38",
+            "transit_score": " 37 ",
+            "bike_score": " 61 "
+        },
+        {
+            "rank": "103",
+            "name": "Fairwood",
+            "walk_score": "37",
+            "transit_score": " 37 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "104",
+            "name": "Lori Heights",
+            "walk_score": "37",
+            "transit_score": " 37 ",
+            "bike_score": " 43 "
+        },
+        {
+            "rank": "105",
+            "name": "Wedgewood Park",
+            "walk_score": "37",
+            "transit_score": " 43 ",
+            "bike_score": " 47 "
+        },
+        {
+            "rank": "106",
+            "name": "Village Meadows",
+            "walk_score": "37",
+            "transit_score": " 40 ",
+            "bike_score": " 41 "
+        },
+        {
+            "rank": "107",
+            "name": "Independence Park",
+            "walk_score": "35",
+            "transit_score": " 35 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "108",
+            "name": "Cheatham Farms",
+            "walk_score": "35",
+            "transit_score": " 26 ",
+            "bike_score": " 35 "
+        },
+        {
+            "rank": "109",
+            "name": "Horizons on Camelback",
+            "walk_score": "35",
+            "transit_score": " 37 ",
+            "bike_score": " 47 "
+        },
+        {
+            "rank": "110",
+            "name": "Ponderosa Village",
+            "walk_score": "35",
+            "transit_score": " 36 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "111",
+            "name": "Terracita",
+            "walk_score": "34",
+            "transit_score": " 33 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "112",
+            "name": "Willow Creek",
+            "walk_score": "34",
+            "transit_score": " 40 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "113",
+            "name": "Union Hills Estates",
+            "walk_score": "34",
+            "transit_score": " 40 ",
+            "bike_score": " 57 "
+        },
+        {
+            "rank": "114",
+            "name": "Pleasant Valley Estates",
+            "walk_score": "33",
+            "transit_score": " 36 ",
+            "bike_score": " 63 "
+        },
+        {
+            "rank": "115",
+            "name": "Braewood Park",
+            "walk_score": "33",
+            "transit_score": " 40 ",
+            "bike_score": " 43 "
+        },
+        {
+            "rank": "116",
+            "name": "Western Meadows",
+            "walk_score": "33",
+            "transit_score": " 40 ",
+            "bike_score": " 51 "
+        },
+        {
+            "rank": "117",
+            "name": "Palos Santos",
+            "walk_score": "33",
+            "transit_score": " 34 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "118",
+            "name": "Tramonto",
+            "walk_score": "32",
+            "transit_score": " - ",
+            "bike_score": " 51 "
+        },
+        {
+            "rank": "119",
+            "name": "Norma Estates",
+            "walk_score": "32",
+            "transit_score": " 31 ",
+            "bike_score": " 60 "
+        },
+        {
+            "rank": "120",
+            "name": "Eagle Ridge",
+            "walk_score": "32",
+            "transit_score": " - ",
+            "bike_score": " 36 "
+        },
+        {
+            "rank": "121",
+            "name": "Cavalier Estates",
+            "walk_score": "32",
+            "transit_score": " 37 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "122",
+            "name": "Spanish Mountain Estates",
+            "walk_score": "32",
+            "transit_score": " 29 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "123",
+            "name": "Lakewood",
+            "walk_score": "31",
+            "transit_score": " 21 ",
+            "bike_score": " 63 "
+        },
+        {
+            "rank": "124",
+            "name": "Moon Valley Gardens",
+            "walk_score": "31",
+            "transit_score": " 39 ",
+            "bike_score": " 57 "
+        },
+        {
+            "rank": "125",
+            "name": "Shea Heights",
+            "walk_score": "31",
+            "transit_score": " 20 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "126",
+            "name": "Desert Foothills Estates",
+            "walk_score": "31",
+            "transit_score": " 28 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "127",
+            "name": "Centura West",
+            "walk_score": "30",
+            "transit_score": " 39 ",
+            "bike_score": " 32 "
+        },
+        {
+            "rank": "128",
+            "name": "Upland Hills",
+            "walk_score": "29",
+            "transit_score": " - ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "129",
+            "name": "South Mountain Resort",
+            "walk_score": "29",
+            "transit_score": " 34 ",
+            "bike_score": " 40 "
+        },
+        {
+            "rank": "130",
+            "name": "Marion Estates",
+            "walk_score": "28",
+            "transit_score": " 33 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "131",
+            "name": "Country Ridge",
+            "walk_score": "28",
+            "transit_score": " 41 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "132",
+            "name": "Homedale",
+            "walk_score": "28",
+            "transit_score": " 40 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "133",
+            "name": "Tuscano",
+            "walk_score": "28",
+            "transit_score": " 23 ",
+            "bike_score": " 56 "
+        },
+        {
+            "rank": "134",
+            "name": "Westridge Shadows",
+            "walk_score": "28",
+            "transit_score": " 41 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "135",
+            "name": "Villa de Paz",
+            "walk_score": "28",
+            "transit_score": " 37 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "136",
+            "name": "Adobe Hills",
+            "walk_score": "28",
+            "transit_score": " 9 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "137",
+            "name": "Valley View Manor",
+            "walk_score": "27",
+            "transit_score": " 40 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "138",
+            "name": "Shea North Estates",
+            "walk_score": "27",
+            "transit_score": " - ",
+            "bike_score": " 56 "
+        },
+        {
+            "rank": "139",
+            "name": "Tatum Ranch",
+            "walk_score": "27",
+            "transit_score": " - ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "140",
+            "name": "South Mountain Heights",
+            "walk_score": "27",
+            "transit_score": " 40 ",
+            "bike_score": " 40 "
+        },
+        {
+            "rank": "141",
+            "name": "Arlington Estates",
+            "walk_score": "27",
+            "transit_score": " 37 ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "142",
+            "name": "Mountain Park Ranch",
+            "walk_score": "27",
+            "transit_score": " 21 ",
+            "bike_score": " 51 "
+        },
+        {
+            "rank": "143",
+            "name": "Chateau Thierry",
+            "walk_score": "26",
+            "transit_score": " 33 ",
+            "bike_score": " 41 "
+        },
+        {
+            "rank": "144",
+            "name": "Foothills North",
+            "walk_score": "25",
+            "transit_score": " 33 ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "145",
+            "name": "Heritage Heights",
+            "walk_score": "25",
+            "transit_score": " 23 ",
+            "bike_score": " 47 "
+        },
+        {
+            "rank": "146",
+            "name": "Arabian Views",
+            "walk_score": "25",
+            "transit_score": " 31 ",
+            "bike_score": " 46 "
+        },
+        {
+            "rank": "147",
+            "name": "Amber Hills",
+            "walk_score": "25",
+            "transit_score": " - ",
+            "bike_score": " 35 "
+        },
+        {
+            "rank": "148",
+            "name": "Jade Park North",
+            "walk_score": "24",
+            "transit_score": " 31 ",
+            "bike_score": " 34 "
+        },
+        {
+            "rank": "149",
+            "name": "Laveen Crossing",
+            "walk_score": "24",
+            "transit_score": " 29 ",
+            "bike_score": " 56 "
+        },
+        {
+            "rank": "150",
+            "name": "Rogers Ranch",
+            "walk_score": "23",
+            "transit_score": " 32 ",
+            "bike_score": " 51 "
+        },
+        {
+            "rank": "151",
+            "name": "Stetson Hills",
+            "walk_score": "23",
+            "transit_score": " - ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "152",
+            "name": "Ponderosa Homes North",
+            "walk_score": "23",
+            "transit_score": " 40 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "153",
+            "name": "Spanish Wells",
+            "walk_score": "22",
+            "transit_score": " 27 ",
+            "bike_score": " 46 "
+        },
+        {
+            "rank": "154",
+            "name": "La Mirada",
+            "walk_score": "22",
+            "transit_score": " 43 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "155",
+            "name": "Northgate",
+            "walk_score": "21",
+            "transit_score": " 41 ",
+            "bike_score": " 34 "
+        },
+        {
+            "rank": "156",
+            "name": "Triple Crown",
+            "walk_score": "20",
+            "transit_score": " 35 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "157",
+            "name": "Estrella Park",
+            "walk_score": "20",
+            "transit_score": " 20 ",
+            "bike_score": " 50 "
+        },
+        {
+            "rank": "158",
+            "name": "Desert Ridge",
+            "walk_score": "20",
+            "transit_score": " 17 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "159",
+            "name": "A-M Ranch",
+            "walk_score": "20",
+            "transit_score": " - ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "160",
+            "name": "Canyon Creek Deer Valley",
+            "walk_score": "19",
+            "transit_score": " 39 ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "161",
+            "name": "Laveen Village",
+            "walk_score": "19",
+            "transit_score": " 43 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "162",
+            "name": "Sunburst Farms",
+            "walk_score": "19",
+            "transit_score": " 37 ",
+            "bike_score": " 35 "
+        },
+        {
+            "rank": "163",
+            "name": "Lookout Mountain",
+            "walk_score": "18",
+            "transit_score": " 30 ",
+            "bike_score": " 17 "
+        },
+        {
+            "rank": "164",
+            "name": "Moon Valley",
+            "walk_score": "17",
+            "transit_score": " 32 ",
+            "bike_score": " 38 "
+        },
+        {
+            "rank": "165",
+            "name": "Silva Mountain",
+            "walk_score": "16",
+            "transit_score": " 41 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "166",
+            "name": "Sienna Vista",
+            "walk_score": "16",
+            "transit_score": " 26 ",
+            "bike_score": " 40 "
+        },
+        {
+            "rank": "167",
+            "name": "River Walk Villages",
+            "walk_score": "16",
+            "transit_score": " 0 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "168",
+            "name": "Dobbins Point",
+            "walk_score": "16",
+            "transit_score": " 14 ",
+            "bike_score": " 28 "
+        },
+        {
+            "rank": "169",
+            "name": "Larissa",
+            "walk_score": "16",
+            "transit_score": " 32 ",
+            "bike_score": " 40 "
+        },
+        {
+            "rank": "170",
+            "name": "Mountaingate",
+            "walk_score": "15",
+            "transit_score": " 1 ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "171",
+            "name": "North Valley View",
+            "walk_score": "15",
+            "transit_score": " 31 ",
+            "bike_score": " 46 "
+        },
+        {
+            "rank": "172",
+            "name": "Camelback Ranch",
+            "walk_score": "13",
+            "transit_score": " 32 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "173",
+            "name": "Village at Aviano",
+            "walk_score": "13",
+            "transit_score": " 1 ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "174",
+            "name": "Northgate Village",
+            "walk_score": "12",
+            "transit_score": " 38 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "175",
+            "name": "Hurley Ranch",
+            "walk_score": "12",
+            "transit_score": " - ",
+            "bike_score": " 43 "
+        },
+        {
+            "rank": "176",
+            "name": "Adobe Highlands",
+            "walk_score": "12",
+            "transit_score": " 31 ",
+            "bike_score": " 34 "
+        },
+        {
+            "rank": "177",
+            "name": "Foothills Golf Club",
+            "walk_score": "11",
+            "transit_score": " 7 ",
+            "bike_score": " 27 "
+        },
+        {
+            "rank": "178",
+            "name": "Park at Terralea",
+            "walk_score": "11",
+            "transit_score": " 36 ",
+            "bike_score": " 36 "
+        },
+        {
+            "rank": "179",
+            "name": "Sunset Farms",
+            "walk_score": "10",
+            "transit_score": " - ",
+            "bike_score": " 35 "
+        },
+        {
+            "rank": "180",
+            "name": "Carefree Crossing",
+            "walk_score": "9",
+            "transit_score": " - ",
+            "bike_score": " 38 "
+        },
+        {
+            "rank": "181",
+            "name": "Stetson Valley",
+            "walk_score": "8",
+            "transit_score": " - ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "182",
+            "name": "Sonoran Foothills",
+            "walk_score": "8",
+            "transit_score": " - ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "183",
+            "name": "Pinnacle Hill",
+            "walk_score": "7",
+            "transit_score": " - ",
+            "bike_score": " 31 "
+        },
+        {
+            "rank": "184",
+            "name": "Laveen Meadows",
+            "walk_score": "6",
+            "transit_score": " 28 ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "185",
+            "name": "Cottonfields",
+            "walk_score": "5",
+            "transit_score": " 25 ",
+            "bike_score": " 35 "
+        },
+        {
+            "rank": "186",
+            "name": "Desert Peak",
+            "walk_score": "5",
+            "transit_score": " - ",
+            "bike_score": " 36 "
+        },
+        {
+            "rank": "187",
+            "name": "Paseo Pointe",
+            "walk_score": "5",
+            "transit_score": " 8 ",
+            "bike_score": " 32 "
+        },
+        {
+            "rank": "188",
+            "name": "Farmington Glen",
+            "walk_score": "4",
+            "transit_score": " - ",
+            "bike_score": " 26 "
+        },
+        {
+            "rank": "189",
+            "name": "Laveen Farms",
+            "walk_score": "4",
+            "transit_score": " 24 ",
+            "bike_score": " 43 "
+        },
+        {
+            "rank": "190",
+            "name": "Mountaingate North",
+            "walk_score": "4",
+            "transit_score": " - ",
+            "bike_score": " 25 "
+        },
+        {
+            "rank": "191",
+            "name": "Laveen Ranch",
+            "walk_score": "3",
+            "transit_score": " 29 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "192",
+            "name": "New Village",
+            "walk_score": "3",
+            "transit_score": " - ",
+            "bike_score": " 25 "
+        },
+        {
+            "rank": "193",
+            "name": "Dove Valley Ranch",
+            "walk_score": "2",
+            "transit_score": " - ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "194",
+            "name": "Dobbins Creek",
+            "walk_score": "2",
+            "transit_score": " 38 ",
+            "bike_score": " 43 "
+        },
+        {
+            "rank": "195",
+            "name": "Colina del Norte",
+            "walk_score": "2",
+            "transit_score": " - ",
+            "bike_score": " 32 "
+        },
+        {
+            "rank": "196",
+            "name": "Tatum Ridge",
+            "walk_score": "1",
+            "transit_score": " - ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "197",
+            "name": "Preserve at Boulder Mountain",
+            "walk_score": "1",
+            "transit_score": " - ",
+            "bike_score": " 30 "
+        },
+        {
+            "rank": "198",
+            "name": "Pyramid Heights",
+            "walk_score": "0",
+            "transit_score": " - ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "199",
+            "name": "Tatum Highlands",
+            "walk_score": "0",
+            "transit_score": " - ",
+            "bike_score": " 32 "
+        },
+        {
+            "rank": "200",
+            "name": "Foothills Reserve",
+            "walk_score": "0",
+            "transit_score": " - ",
+            "bike_score": " 22 "
+        }
+    ],
+    "date": 1541202114,
+    "lng": -112.089,
+    "sort_date": 1541202114,
+    "lat": 33.5724,
+    "price_range": [
+        null,
+        null
+    ],
+    "name": "Phoenix",
+    "state": "AZ"
+}

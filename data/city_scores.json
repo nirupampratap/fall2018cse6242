@@ -1,0 +1,1140 @@
+{
+    "walk_score": 49,
+    "transit_score": 46,
+    "bike_score": 41,
+    "population": 420003,
+    "restaurants": 2580,
+    "restaurant_average": 6.0,
+    "neighborhoods": [
+        {
+            "rank": "1",
+            "name": "Georgia State University",
+            "walk_score": "97",
+            "transit_score": " 79 ",
+            "bike_score": " 80 "
+        },
+        {
+            "rank": "2",
+            "name": "Peachtree Center",
+            "walk_score": "91",
+            "transit_score": " 77 ",
+            "bike_score": " 76 "
+        },
+        {
+            "rank": "3",
+            "name": "Buckhead Village",
+            "walk_score": "91",
+            "transit_score": " 44 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "4",
+            "name": "Sweet Auburn",
+            "walk_score": "90",
+            "transit_score": " 69 ",
+            "bike_score": " 82 "
+        },
+        {
+            "rank": "5",
+            "name": "South Downtown",
+            "walk_score": "89",
+            "transit_score": " 80 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "6",
+            "name": "Midtown",
+            "walk_score": "88",
+            "transit_score": " 62 ",
+            "bike_score": " 72 "
+        },
+        {
+            "rank": "7",
+            "name": "SoNo",
+            "walk_score": "88",
+            "transit_score": " 66 ",
+            "bike_score": " 69 "
+        },
+        {
+            "rank": "8",
+            "name": "Inman Park",
+            "walk_score": "84",
+            "transit_score": " 59 ",
+            "bike_score": " 80 "
+        },
+        {
+            "rank": "9",
+            "name": "Castleberry Hill",
+            "walk_score": "84",
+            "transit_score": " 75 ",
+            "bike_score": " 66 "
+        },
+        {
+            "rank": "10",
+            "name": "Old Fourth Ward",
+            "walk_score": "82",
+            "transit_score": " 54 ",
+            "bike_score": " 84 "
+        },
+        {
+            "rank": "11",
+            "name": "Cabbagetown",
+            "walk_score": "81",
+            "transit_score": " 59 ",
+            "bike_score": " 87 "
+        },
+        {
+            "rank": "12",
+            "name": "Poncey-Highland",
+            "walk_score": "80",
+            "transit_score": " 44 ",
+            "bike_score": " 77 "
+        },
+        {
+            "rank": "13",
+            "name": "Atlantic Station",
+            "walk_score": "79",
+            "transit_score": " 52 ",
+            "bike_score": " 79 "
+        },
+        {
+            "rank": "14",
+            "name": "Marietta Street Artery",
+            "walk_score": "78",
+            "transit_score": " 45 ",
+            "bike_score": " 86 "
+        },
+        {
+            "rank": "15",
+            "name": "Centennial Hill",
+            "walk_score": "78",
+            "transit_score": " 68 ",
+            "bike_score": " 71 "
+        },
+        {
+            "rank": "16",
+            "name": "Buckhead Heights",
+            "walk_score": "77",
+            "transit_score": " 56 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "17",
+            "name": "Home Park",
+            "walk_score": "77",
+            "transit_score": " 52 ",
+            "bike_score": " 78 "
+        },
+        {
+            "rank": "18",
+            "name": "Harris Chiles",
+            "walk_score": "76",
+            "transit_score": " 61 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "19",
+            "name": "Virginia Highland",
+            "walk_score": "76",
+            "transit_score": " 40 ",
+            "bike_score": " 70 "
+        },
+        {
+            "rank": "20",
+            "name": "The Villages at Castleberry Hill",
+            "walk_score": "74",
+            "transit_score": " 59 ",
+            "bike_score": " 65 "
+        },
+        {
+            "rank": "21",
+            "name": "Atlanta University Center",
+            "walk_score": "74",
+            "transit_score": " 60 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "22",
+            "name": "Buckhead Forest",
+            "walk_score": "74",
+            "transit_score": " 46 ",
+            "bike_score": " 46 "
+        },
+        {
+            "rank": "23",
+            "name": "Candler Park",
+            "walk_score": "73",
+            "transit_score": " 57 ",
+            "bike_score": " 71 "
+        },
+        {
+            "rank": "24",
+            "name": "Reynoldstown",
+            "walk_score": "73",
+            "transit_score": " 59 ",
+            "bike_score": " 80 "
+        },
+        {
+            "rank": "25",
+            "name": "West End",
+            "walk_score": "72",
+            "transit_score": " 57 ",
+            "bike_score": " 67 "
+        },
+        {
+            "rank": "26",
+            "name": "Vine City",
+            "walk_score": "70",
+            "transit_score": " 63 ",
+            "bike_score": " 50 "
+        },
+        {
+            "rank": "27",
+            "name": "Georgia Tech",
+            "walk_score": "70",
+            "transit_score": " 55 ",
+            "bike_score": " 78 "
+        },
+        {
+            "rank": "28",
+            "name": "Peachtree Heights West",
+            "walk_score": "70",
+            "transit_score": " 34 ",
+            "bike_score": " 45 "
+        },
+        {
+            "rank": "29",
+            "name": "Berkeley Park",
+            "walk_score": "68",
+            "transit_score": " 41 ",
+            "bike_score": " 56 "
+        },
+        {
+            "rank": "30",
+            "name": "Ansley Park",
+            "walk_score": "67",
+            "transit_score": " 53 ",
+            "bike_score": " 64 "
+        },
+        {
+            "rank": "31",
+            "name": "English Avenue",
+            "walk_score": "66",
+            "transit_score": " 46 ",
+            "bike_score": " 62 "
+        },
+        {
+            "rank": "32",
+            "name": "Piedmont Heights",
+            "walk_score": "66",
+            "transit_score": " 29 ",
+            "bike_score": " 41 "
+        },
+        {
+            "rank": "33",
+            "name": "Washington Park",
+            "walk_score": "66",
+            "transit_score": " 58 ",
+            "bike_score": " 61 "
+        },
+        {
+            "rank": "34",
+            "name": "Garden Hills",
+            "walk_score": "65",
+            "transit_score": " 47 ",
+            "bike_score": " 36 "
+        },
+        {
+            "rank": "35",
+            "name": "Edgewood",
+            "walk_score": "65",
+            "transit_score": " 56 ",
+            "bike_score": " 55 "
+        },
+        {
+            "rank": "36",
+            "name": "Lindbergh - Morosgo",
+            "walk_score": "64",
+            "transit_score": " 63 ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "37",
+            "name": "Ashview Heights",
+            "walk_score": "64",
+            "transit_score": " 55 ",
+            "bike_score": " 57 "
+        },
+        {
+            "rank": "38",
+            "name": "Ardmore",
+            "walk_score": "64",
+            "transit_score": " 38 ",
+            "bike_score": " 31 "
+        },
+        {
+            "rank": "39",
+            "name": "Mechanicsville",
+            "walk_score": "64",
+            "transit_score": " 61 ",
+            "bike_score": " 56 "
+        },
+        {
+            "rank": "40",
+            "name": "Peachtree Hills",
+            "walk_score": "64",
+            "transit_score": " 45 ",
+            "bike_score": " 31 "
+        },
+        {
+            "rank": "41",
+            "name": "Capitol Gateway",
+            "walk_score": "64",
+            "transit_score": " 71 ",
+            "bike_score": " 65 "
+        },
+        {
+            "rank": "42",
+            "name": "Peachtree Park",
+            "walk_score": "63",
+            "transit_score": " 53 ",
+            "bike_score": " 36 "
+        },
+        {
+            "rank": "43",
+            "name": "South Tuxedo Park",
+            "walk_score": "62",
+            "transit_score": " 37 ",
+            "bike_score": " 39 "
+        },
+        {
+            "rank": "44",
+            "name": "Pittsburgh",
+            "walk_score": "60",
+            "transit_score": " 53 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "45",
+            "name": "Ormewood Park",
+            "walk_score": "59",
+            "transit_score": " 40 ",
+            "bike_score": " 58 "
+        },
+        {
+            "rank": "46",
+            "name": "Kirkwood",
+            "walk_score": "59",
+            "transit_score": " 41 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "47",
+            "name": "Ridgedale Park",
+            "walk_score": "59",
+            "transit_score": " 48 ",
+            "bike_score": " 38 "
+        },
+        {
+            "rank": "48",
+            "name": "Grant Park",
+            "walk_score": "58",
+            "transit_score": " 45 ",
+            "bike_score": " 61 "
+        },
+        {
+            "rank": "49",
+            "name": "Adair Park",
+            "walk_score": "58",
+            "transit_score": " 59 ",
+            "bike_score": " 61 "
+        },
+        {
+            "rank": "50",
+            "name": "Peachtree Heights East",
+            "walk_score": "58",
+            "transit_score": " 46 ",
+            "bike_score": " 30 "
+        },
+        {
+            "rank": "51",
+            "name": "Brookwood Hills",
+            "walk_score": "58",
+            "transit_score": " 36 ",
+            "bike_score": " 31 "
+        },
+        {
+            "rank": "52",
+            "name": "Lake Claire",
+            "walk_score": "57",
+            "transit_score": " 46 ",
+            "bike_score": " 52 "
+        },
+        {
+            "rank": "53",
+            "name": "Underwood Hills",
+            "walk_score": "56",
+            "transit_score": " 37 ",
+            "bike_score": " 53 "
+        },
+        {
+            "rank": "54",
+            "name": "Summerhill",
+            "walk_score": "56",
+            "transit_score": " 52 ",
+            "bike_score": " 54 "
+        },
+        {
+            "rank": "55",
+            "name": "Brookwood",
+            "walk_score": "54",
+            "transit_score": " 42 ",
+            "bike_score": " 35 "
+        },
+        {
+            "rank": "56",
+            "name": "The Villages at Carver",
+            "walk_score": "54",
+            "transit_score": " 41 ",
+            "bike_score": " 30 "
+        },
+        {
+            "rank": "57",
+            "name": "South Atlanta",
+            "walk_score": "54",
+            "transit_score": " 43 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "58",
+            "name": "Westview",
+            "walk_score": "52",
+            "transit_score": " 43 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "59",
+            "name": "Bankhead",
+            "walk_score": "52",
+            "transit_score": " 51 ",
+            "bike_score": " 39 "
+        },
+        {
+            "rank": "60",
+            "name": "Capitol View",
+            "walk_score": "52",
+            "transit_score": " 53 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "61",
+            "name": "Campbellton Road",
+            "walk_score": "51",
+            "transit_score": " 44 ",
+            "bike_score": " 28 "
+        },
+        {
+            "rank": "62",
+            "name": "East Chastain Park",
+            "walk_score": "51",
+            "transit_score": " 34 ",
+            "bike_score": " 47 "
+        },
+        {
+            "rank": "63",
+            "name": "Pomona Park",
+            "walk_score": "50",
+            "transit_score": " 44 ",
+            "bike_score": " 27 "
+        },
+        {
+            "rank": "64",
+            "name": "Peoplestown",
+            "walk_score": "50",
+            "transit_score": " 46 ",
+            "bike_score": " 44 "
+        },
+        {
+            "rank": "65",
+            "name": "North Buckhead",
+            "walk_score": "48",
+            "transit_score": " 35 ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "66",
+            "name": "Hammond Park",
+            "walk_score": "48",
+            "transit_score": " 45 ",
+            "bike_score": " 30 "
+        },
+        {
+            "rank": "67",
+            "name": "East Atlanta",
+            "walk_score": "46",
+            "transit_score": " 39 ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "68",
+            "name": "Springlake",
+            "walk_score": "46",
+            "transit_score": " 32 ",
+            "bike_score": " 29 "
+        },
+        {
+            "rank": "69",
+            "name": "Harland Terrace",
+            "walk_score": "46",
+            "transit_score": " 71 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "70",
+            "name": "Morningside - Lenox Park",
+            "walk_score": "46",
+            "transit_score": " 34 ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "71",
+            "name": "Loring Heights",
+            "walk_score": "45",
+            "transit_score": " 45 ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "72",
+            "name": "Lakewood Heights",
+            "walk_score": "44",
+            "transit_score": " 41 ",
+            "bike_score": " 25 "
+        },
+        {
+            "rank": "73",
+            "name": "Adams Park",
+            "walk_score": "44",
+            "transit_score": " 45 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "74",
+            "name": "Oakland City",
+            "walk_score": "43",
+            "transit_score": " 56 ",
+            "bike_score": " 49 "
+        },
+        {
+            "rank": "75",
+            "name": "Capitol View Manor",
+            "walk_score": "43",
+            "transit_score": " 43 ",
+            "bike_score": " 27 "
+        },
+        {
+            "rank": "76",
+            "name": "Betmar Lavilla",
+            "walk_score": "43",
+            "transit_score": " 42 ",
+            "bike_score": " 24 "
+        },
+        {
+            "rank": "77",
+            "name": "Florida Heights",
+            "walk_score": "42",
+            "transit_score": " 67 ",
+            "bike_score": " 32 "
+        },
+        {
+            "rank": "78",
+            "name": "Joyland",
+            "walk_score": "42",
+            "transit_score": " 40 ",
+            "bike_score": " 24 "
+        },
+        {
+            "rank": "79",
+            "name": "Pine Hills",
+            "walk_score": "42",
+            "transit_score": " 50 ",
+            "bike_score": " 27 "
+        },
+        {
+            "rank": "80",
+            "name": "Peachtree Battle",
+            "walk_score": "41",
+            "transit_score": " 34 ",
+            "bike_score": " 29 "
+        },
+        {
+            "rank": "81",
+            "name": "Cascade Avenue",
+            "walk_score": "41",
+            "transit_score": " 42 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "82",
+            "name": "Sylvan Hills",
+            "walk_score": "41",
+            "transit_score": " 55 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "83",
+            "name": "Collier Hills",
+            "walk_score": "41",
+            "transit_score": " 38 ",
+            "bike_score": " 28 "
+        },
+        {
+            "rank": "84",
+            "name": "Perkerson",
+            "walk_score": "40",
+            "transit_score": " 45 ",
+            "bike_score": " 29 "
+        },
+        {
+            "rank": "85",
+            "name": "Grove Park",
+            "walk_score": "38",
+            "transit_score": " 43 ",
+            "bike_score": " 30 "
+        },
+        {
+            "rank": "86",
+            "name": "Custer - Mcdonough - Guice",
+            "walk_score": "38",
+            "transit_score": " 40 ",
+            "bike_score": " 30 "
+        },
+        {
+            "rank": "87",
+            "name": "Adamsville",
+            "walk_score": "37",
+            "transit_score": " 49 ",
+            "bike_score": " 25 "
+        },
+        {
+            "rank": "88",
+            "name": "Venetian Hills",
+            "walk_score": "37",
+            "transit_score": " 51 ",
+            "bike_score": " 31 "
+        },
+        {
+            "rank": "89",
+            "name": "Penelope",
+            "walk_score": "37",
+            "transit_score": " 55 ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "90",
+            "name": "West Lake",
+            "walk_score": "37",
+            "transit_score": " 51 ",
+            "bike_score": " 31 "
+        },
+        {
+            "rank": "91",
+            "name": "Knight Park - Howell Station",
+            "walk_score": "37",
+            "transit_score": " 48 ",
+            "bike_score": " 38 "
+        },
+        {
+            "rank": "92",
+            "name": "Hunter Hills",
+            "walk_score": "36",
+            "transit_score": " 49 ",
+            "bike_score": " 38 "
+        },
+        {
+            "rank": "93",
+            "name": "Wildwood",
+            "walk_score": "34",
+            "transit_score": " 37 ",
+            "bike_score": " 34 "
+        },
+        {
+            "rank": "94",
+            "name": "Mozley Park",
+            "walk_score": "34",
+            "transit_score": " 48 ",
+            "bike_score": " 48 "
+        },
+        {
+            "rank": "95",
+            "name": "Old Gordon",
+            "walk_score": "34",
+            "transit_score": " 43 ",
+            "bike_score": " 26 "
+        },
+        {
+            "rank": "96",
+            "name": "Whittier Mill Village",
+            "walk_score": "34",
+            "transit_score": " 35 ",
+            "bike_score": " 23 "
+        },
+        {
+            "rank": "97",
+            "name": "Center Hill",
+            "walk_score": "33",
+            "transit_score": " 46 ",
+            "bike_score": " 26 "
+        },
+        {
+            "rank": "98",
+            "name": "Dixie Hills",
+            "walk_score": "32",
+            "transit_score": " 58 ",
+            "bike_score": " 34 "
+        },
+        {
+            "rank": "99",
+            "name": "Riverside",
+            "walk_score": "32",
+            "transit_score": " 39 ",
+            "bike_score": " 23 "
+        },
+        {
+            "rank": "100",
+            "name": "Carey Park",
+            "walk_score": "31",
+            "transit_score": " 42 ",
+            "bike_score": " 15 "
+        },
+        {
+            "rank": "101",
+            "name": "Princeton Lakes",
+            "walk_score": "30",
+            "transit_score": " 38 ",
+            "bike_score": " 26 "
+        },
+        {
+            "rank": "102",
+            "name": "Benteen Park",
+            "walk_score": "29",
+            "transit_score": " 36 ",
+            "bike_score": " 23 "
+        },
+        {
+            "rank": "103",
+            "name": "Cross Creek",
+            "walk_score": "29",
+            "transit_score": " 32 ",
+            "bike_score": " 26 "
+        },
+        {
+            "rank": "104",
+            "name": "Boulevard Heights",
+            "walk_score": "29",
+            "transit_score": " 38 ",
+            "bike_score": " 33 "
+        },
+        {
+            "rank": "105",
+            "name": "Chosewood Park",
+            "walk_score": "29",
+            "transit_score": " 39 ",
+            "bike_score": " 25 "
+        },
+        {
+            "rank": "106",
+            "name": "Brookhaven",
+            "walk_score": "28",
+            "transit_score": " 19 ",
+            "bike_score": " 27 "
+        },
+        {
+            "rank": "107",
+            "name": "Greenbriar",
+            "walk_score": "26",
+            "transit_score": " 43 ",
+            "bike_score": " 19 "
+        },
+        {
+            "rank": "108",
+            "name": "Glenrose Heights",
+            "walk_score": "25",
+            "transit_score": " 37 ",
+            "bike_score": " 20 "
+        },
+        {
+            "rank": "109",
+            "name": "Thomasville Heights",
+            "walk_score": "25",
+            "transit_score": " 39 ",
+            "bike_score": " 18 "
+        },
+        {
+            "rank": "110",
+            "name": "Browns Mill Park",
+            "walk_score": "24",
+            "transit_score": " 43 ",
+            "bike_score": " 42 "
+        },
+        {
+            "rank": "111",
+            "name": "Bolton",
+            "walk_score": "24",
+            "transit_score": " 39 ",
+            "bike_score": " 22 "
+        },
+        {
+            "rank": "112",
+            "name": "Westminster - Milmar",
+            "walk_score": "23",
+            "transit_score": " 30 ",
+            "bike_score": " 15 "
+        },
+        {
+            "rank": "113",
+            "name": "Collier Heights",
+            "walk_score": "23",
+            "transit_score": " 43 ",
+            "bike_score": " 15 "
+        },
+        {
+            "rank": "114",
+            "name": "Wisteria Gardens",
+            "walk_score": "23",
+            "transit_score": " 48 ",
+            "bike_score": " 23 "
+        },
+        {
+            "rank": "115",
+            "name": "Almond Park",
+            "walk_score": "23",
+            "transit_score": " 38 ",
+            "bike_score": " 21 "
+        },
+        {
+            "rank": "116",
+            "name": "Fairburn Heights",
+            "walk_score": "22",
+            "transit_score": " 40 ",
+            "bike_score": " 16 "
+        },
+        {
+            "rank": "117",
+            "name": "Tuxedo Park",
+            "walk_score": "22",
+            "transit_score": " 21 ",
+            "bike_score": " 17 "
+        },
+        {
+            "rank": "118",
+            "name": "West Paces Ferry",
+            "walk_score": "21",
+            "transit_score": " 29 ",
+            "bike_score": " 15 "
+        },
+        {
+            "rank": "119",
+            "name": "Scotts Crossing",
+            "walk_score": "21",
+            "transit_score": " 41 ",
+            "bike_score": " 12 "
+        },
+        {
+            "rank": "120",
+            "name": "Southwest Atlanta",
+            "walk_score": "21",
+            "transit_score": " 41 ",
+            "bike_score": " 17 "
+        },
+        {
+            "rank": "121",
+            "name": "Ridgewood Heights",
+            "walk_score": "21",
+            "transit_score": " 38 ",
+            "bike_score": " 21 "
+        },
+        {
+            "rank": "122",
+            "name": "Orchard Knob",
+            "walk_score": "20",
+            "transit_score": " 38 ",
+            "bike_score": " 21 "
+        },
+        {
+            "rank": "123",
+            "name": "Fairburn Mays",
+            "walk_score": "20",
+            "transit_score": " 46 ",
+            "bike_score": " 20 "
+        },
+        {
+            "rank": "124",
+            "name": "Rosedale Heights",
+            "walk_score": "19",
+            "transit_score": " 42 ",
+            "bike_score": " 39 "
+        },
+        {
+            "rank": "125",
+            "name": "Beecher Hills",
+            "walk_score": "18",
+            "transit_score": " 34 ",
+            "bike_score": " 21 "
+        },
+        {
+            "rank": "126",
+            "name": "Mays",
+            "walk_score": "18",
+            "transit_score": " 45 ",
+            "bike_score": " 15 "
+        },
+        {
+            "rank": "127",
+            "name": "Lincoln",
+            "walk_score": "18",
+            "transit_score": " 39 ",
+            "bike_score": " 15 "
+        },
+        {
+            "rank": "128",
+            "name": "Norwood Manor",
+            "walk_score": "17",
+            "transit_score": " 44 ",
+            "bike_score": " 17 "
+        },
+        {
+            "rank": "129",
+            "name": "Peyton Forest",
+            "walk_score": "17",
+            "transit_score": " 44 ",
+            "bike_score": " 12 "
+        },
+        {
+            "rank": "130",
+            "name": "Cascade Heights",
+            "walk_score": "16",
+            "transit_score": " 41 ",
+            "bike_score": " 20 "
+        },
+        {
+            "rank": "131",
+            "name": "Polar Rock",
+            "walk_score": "16",
+            "transit_score": " 42 ",
+            "bike_score": " 18 "
+        },
+        {
+            "rank": "132",
+            "name": "Rockdale",
+            "walk_score": "16",
+            "transit_score": " 32 ",
+            "bike_score": " 26 "
+        },
+        {
+            "rank": "133",
+            "name": "Kings Forest",
+            "walk_score": "15",
+            "transit_score": " 39 ",
+            "bike_score": " 20 "
+        },
+        {
+            "rank": "134",
+            "name": "Monroe Heights",
+            "walk_score": "15",
+            "transit_score": " 37 ",
+            "bike_score": " 10 "
+        },
+        {
+            "rank": "135",
+            "name": "Audobon Forest",
+            "walk_score": "15",
+            "transit_score": " 34 ",
+            "bike_score": " 26 "
+        },
+        {
+            "rank": "136",
+            "name": "Hills Park",
+            "walk_score": "15",
+            "transit_score": " 30 ",
+            "bike_score": " 15 "
+        },
+        {
+            "rank": "137",
+            "name": "Chastain Park",
+            "walk_score": "14",
+            "transit_score": " 6 ",
+            "bike_score": " 19 "
+        },
+        {
+            "rank": "138",
+            "name": "West Highlands",
+            "walk_score": "14",
+            "transit_score": " 30 ",
+            "bike_score": " 35 "
+        },
+        {
+            "rank": "139",
+            "name": "Argonne Forest",
+            "walk_score": "13",
+            "transit_score": " 25 ",
+            "bike_score": " 12 "
+        },
+        {
+            "rank": "140",
+            "name": "Swallow Circle - Baywood",
+            "walk_score": "13",
+            "transit_score": " 43 ",
+            "bike_score": " 37 "
+        },
+        {
+            "rank": "141",
+            "name": "Brandon",
+            "walk_score": "12",
+            "transit_score": " 31 ",
+            "bike_score": " 14 "
+        },
+        {
+            "rank": "142",
+            "name": "Westwood Terrace",
+            "walk_score": "12",
+            "transit_score": " 35 ",
+            "bike_score": " 21 "
+        },
+        {
+            "rank": "143",
+            "name": "Paces",
+            "walk_score": "12",
+            "transit_score": " 22 ",
+            "bike_score": " 9 "
+        },
+        {
+            "rank": "144",
+            "name": "Lakewood",
+            "walk_score": "12",
+            "transit_score": " 45 ",
+            "bike_score": " 25 "
+        },
+        {
+            "rank": "145",
+            "name": "Deerwood",
+            "walk_score": "12",
+            "transit_score": " 41 ",
+            "bike_score": " 9 "
+        },
+        {
+            "rank": "146",
+            "name": "Leila Valley",
+            "walk_score": "12",
+            "transit_score": " 44 ",
+            "bike_score": " 19 "
+        },
+        {
+            "rank": "147",
+            "name": "Baker Hills",
+            "walk_score": "11",
+            "transit_score": " 41 ",
+            "bike_score": " 16 "
+        },
+        {
+            "rank": "148",
+            "name": "Carver Hills",
+            "walk_score": "11",
+            "transit_score": " 39 ",
+            "bike_score": " 12 "
+        },
+        {
+            "rank": "149",
+            "name": "Carroll Heights",
+            "walk_score": "10",
+            "transit_score": " 36 ",
+            "bike_score": " 18 "
+        },
+        {
+            "rank": "150",
+            "name": "Margaret Mitchell",
+            "walk_score": "10",
+            "transit_score": " 25 ",
+            "bike_score": " 7 "
+        },
+        {
+            "rank": "151",
+            "name": "Castlewood",
+            "walk_score": "9",
+            "transit_score": " 31 ",
+            "bike_score": " 7 "
+        },
+        {
+            "rank": "152",
+            "name": "South River Gardens",
+            "walk_score": "9",
+            "transit_score": " 34 ",
+            "bike_score": " 16 "
+        },
+        {
+            "rank": "153",
+            "name": "Arlington Estates",
+            "walk_score": "8",
+            "transit_score": " 25 ",
+            "bike_score": " 19 "
+        },
+        {
+            "rank": "154",
+            "name": "Ben Hill Terrace",
+            "walk_score": "8",
+            "transit_score": " 31 ",
+            "bike_score": " 13 "
+        },
+        {
+            "rank": "155",
+            "name": "Wilson Mill Meadows",
+            "walk_score": "7",
+            "transit_score": " 39 ",
+            "bike_score": " 12 "
+        },
+        {
+            "rank": "156",
+            "name": "Kingswood",
+            "walk_score": "7",
+            "transit_score": " 15 ",
+            "bike_score": " 12 "
+        },
+        {
+            "rank": "157",
+            "name": "Mt. Paran",
+            "walk_score": "6",
+            "transit_score": " 9 ",
+            "bike_score": " 6 "
+        },
+        {
+            "rank": "158",
+            "name": "Heritage Valley",
+            "walk_score": "4",
+            "transit_score": " 38 ",
+            "bike_score": " 11 "
+        },
+        {
+            "rank": "159",
+            "name": "Fairway Acres",
+            "walk_score": "3",
+            "transit_score": " 26 ",
+            "bike_score": " 13 "
+        },
+        {
+            "rank": "160",
+            "name": "Midwest Cascade",
+            "walk_score": "1",
+            "transit_score": " 30 ",
+            "bike_score": " 7 "
+        }
+    ],
+    "date": 1541102611,
+    "lng": -84.4231,
+    "sort_date": 1541102611,
+    "lat": 33.7627,
+    "price_range": [
+        null,
+        null
+    ],
+    "name": "Atlanta",
+    "state": "GA"
+}

@@ -1,0 +1,218 @@
+[
+    {
+        "zipcode": "30303",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 93,
+        "population": 4951,
+        "restaurants": 405,
+        "restaurant_average": 19.0
+    },
+    {
+        "zipcode": "30305",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 60,
+        "population": 24312,
+        "restaurants": 368,
+        "restaurant_average": 5.0
+    },
+    {
+        "zipcode": "30308",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 88,
+        "population": 16967,
+        "restaurants": 498,
+        "restaurant_average": 17.0
+    },
+    {
+        "zipcode": "30309",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 70,
+        "population": 21489,
+        "restaurants": 370,
+        "restaurant_average": 13.0
+    },
+    {
+        "zipcode": "30310",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 52,
+        "population": 28615,
+        "restaurants": 153,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "30311",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 34,
+        "population": 32008,
+        "restaurants": 104,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "30312",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 70,
+        "population": 18601,
+        "restaurants": 404,
+        "restaurant_average": 5.0
+    },
+    {
+        "zipcode": "30313",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 75,
+        "population": 10163,
+        "restaurants": 333,
+        "restaurant_average": 5.0
+    },
+    {
+        "zipcode": "30314",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 54,
+        "population": 20607,
+        "restaurants": 92,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "30315",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 36,
+        "population": 33791,
+        "restaurants": 111,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "30318",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 43,
+        "population": 55159,
+        "restaurants": 381,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "30326",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 72,
+        "population": 3457,
+        "restaurants": 170,
+        "restaurant_average": 10.0
+    },
+    {
+        "zipcode": "30303",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 93,
+        "population": 4951,
+        "restaurants": 405,
+        "restaurant_average": 19.0
+    },
+    {
+        "zipcode": "30305",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 60,
+        "population": 24312,
+        "restaurants": 368,
+        "restaurant_average": 5.0
+    },
+    {
+        "zipcode": "30308",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 88,
+        "population": 16967,
+        "restaurants": 498,
+        "restaurant_average": 17.0
+    },
+    {
+        "zipcode": "30309",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 70,
+        "population": 21489,
+        "restaurants": 370,
+        "restaurant_average": 13.0
+    },
+    {
+        "zipcode": "30310",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 52,
+        "population": 28615,
+        "restaurants": 153,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "30311",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 34,
+        "population": 32008,
+        "restaurants": 104,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "30312",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 70,
+        "population": 18601,
+        "restaurants": 404,
+        "restaurant_average": 5.0
+    },
+    {
+        "zipcode": "30313",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 75,
+        "population": 10163,
+        "restaurants": 333,
+        "restaurant_average": 5.0
+    },
+    {
+        "zipcode": "30314",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 54,
+        "population": 20607,
+        "restaurants": 92,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "30315",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 36,
+        "population": 33791,
+        "restaurants": 111,
+        "restaurant_average": 0.6
+    },
+    {
+        "zipcode": "30318",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 43,
+        "population": 55159,
+        "restaurants": 381,
+        "restaurant_average": 1.0
+    },
+    {
+        "zipcode": "30326",
+        "city": "Atlanta",
+        "state": "GA",
+        "walk_score": 72,
+        "population": 3457,
+        "restaurants": 170,
+        "restaurant_average": 10.0
+    }
+]

@@ -1,0 +1,22 @@
+#geo {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#zip-list{
+  float:left;
+  width: 45%;
+}
+
+#map {
+  float:right;
+  margin-right: 30px;
+  height: 400px;
+  width: 45%;
+}
+
+.zip-container {
+  fill:none;
+  height: 30px;
+  width: 100%;
+}

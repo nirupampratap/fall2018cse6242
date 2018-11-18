@@ -1,21 +1,10 @@
 var zip = [];
-
-d3.csv("./data/data.csv", function(data) {
-
-	d3.select("#select1").on("change", updateScores);
-
-	function updateScores(){
-		var scoreId = "score" + d3.select(this).property('value');
-
-		data.sort(function(a,b){return b[scoreId] - a[scoreId]});
-
-		var svg = d3.select("svg");
-
-		if (svg){
-			d3.select("svg").remove();
-		}
-
-		svg = d3.select("#zip-list")
+            
+function update_data(data){
+    if(d3.select("svg")){
+        d3.select("svg").remove();
+    }
+    var svg = d3.select("#zip-list")
 			.append("svg")
 			.attr("height", "400px")
 			.attr("width", "100%")
@@ -82,4 +71,4 @@ d3.csv("./data/data.csv", function(data) {
 			.attr("x", "90%")
 			.attr("font-size", "11");
 	};
-});
+}

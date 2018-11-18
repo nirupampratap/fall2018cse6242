@@ -43,7 +43,7 @@ function update_data(data){
 		var colors = ["#ff0000","#ff4000","#ff8000","#ffbf00","#ffff00","#bfff00","#80ff00","#40ff00"];
 
 		var colorScale = d3.scaleQuantile()
-						.domain([0, 90, d3.max(data, function(d){return d[scoreId]})])
+						.domain([0, 90, d3.max(data, function(d){return d.score})])
 						.range(colors);
 
 		var bars = list.append("rect")
@@ -58,17 +58,16 @@ function update_data(data){
 
 		var scores = list.append("rect")
 				.attr("class", "score")
-				.attr("fill", function(d) { return colorScale(d[scoreId]); })
+				.attr("fill", function(d) { return colorScale(d.score); })
 				.attr("height", "20px")
-				.attr("width", function(d) {return (5 + d[scoreId] * 0.70 + "%"); })
+				.attr("width", function(d) {return (5 + d.score * 0.70 + "%"); })
 				.attr("x", 100)
 				.attr("y", 5)
 				.attr("rx", 5)
 				.attr("ry", 5);
 
-		list.append("text").text(function(d){return d[scoreId] + "%"})
+		list.append("text").text(function(d){return d.score + "%"})
 			.attr("y", 20)
 			.attr("x", "90%")
 			.attr("font-size", "11");
 	};
-}

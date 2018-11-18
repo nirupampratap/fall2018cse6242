@@ -1,15 +1,14 @@
-#geo {
+#visualization-container {
   width: 1000px;
   margin-top: 40px;
+  display: flex;
 }
 
 #zip-list{
-  float:left;
   width: 45%;
 }
 
 #map {
-  float:right;
   margin-right: 30px;
   height: 400px;
   width: 45%;

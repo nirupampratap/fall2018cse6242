@@ -1,12 +1,11 @@
 var zip = [];
 
-d3.csv("./data/data.csv", function(data) {
-
-	data.forEach(e => e.score = Math.floor(Math.random() * 100));
-
-	// data.sort(function(a,b){return b.score - a.score});
-
-	var svg = d3.select("#zip-list")
+            
+function update_data(data){
+    if(d3.select("svg")){
+        d3.select("svg").remove();
+    }
+    var svg = d3.select("#zip-list")
 			.append("svg")
 			.attr("height", "400px")
 			.attr("width", "100%")
@@ -69,4 +68,4 @@ d3.csv("./data/data.csv", function(data) {
 			.attr("y", 5)
 			.attr("rx", 10)
 			.attr("ry", 10);
-});
+}

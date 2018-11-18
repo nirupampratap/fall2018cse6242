@@ -11,6 +11,7 @@ function geocodeAddress(geocoder, resultsMap, zipcode) {
 	geocoder.geocode({'address': zipcode + " us"}, function(results, status) {
 		if (status === 'OK') {
 			resultsMap.setCenter(results[0].geometry.location);
+			resultsMap.setZoom(12);
 			var marker = new google.maps.Marker({
 				map: resultsMap,
 				position: results[0].geometry.location

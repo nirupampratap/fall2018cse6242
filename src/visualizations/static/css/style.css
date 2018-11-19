@@ -1,3 +1,13 @@
+.inputs{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multiselect {
+  width: 200px;
+}
+
 #geo-container {
   width: 1200px;
   margin-top: 40px;
@@ -10,7 +20,7 @@
 
 #map {
   margin-right: 30px;
-  height: 400px;
+  height: 300px;
   width: 45%;
 }
 
@@ -20,7 +30,9 @@
   width: 100%;
 }
 
-
-.multiselect {
-  width: 200px;
+#zip-insight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
 }

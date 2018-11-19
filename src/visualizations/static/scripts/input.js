@@ -25,6 +25,9 @@ function showCheckboxes() {
 }
 
 function getData(){
+
+	d3.selectAll("svg").remove();
+
 	var cuisines = $('#cuisines').val();
 
 	

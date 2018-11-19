@@ -24,12 +24,12 @@ def zip():
 		{
 			"zipcode": 85007,
 			"score":25,
-			"attributes":{
+			"attr":{
 				"attr1": 24,
 				"attr2": 34,
 				"attr3": 6
 			},
-			"text-review":{
+			"textReview":{
 				"hello": 23,
 				"elephant": 45,
 				"car": 6,
@@ -40,12 +40,12 @@ def zip():
 		 {
 			"zipcode": 85009,
 			"score":78,
-			"attributes":{
+			"attr":{
 				"attr1": 10,
 				"attr2": 5,
 				"attr3": 43
 			},
-			"text-review":{
+			"textReview":{
 				"hello": 2,
 				"elephant": 28,
 				"car": 51,

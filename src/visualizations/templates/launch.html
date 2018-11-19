@@ -6,12 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="static/css/layout.css" rel="stylesheet" type="text/css" media="all">
 <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all">
+ <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+<script>
+  d3v3 = d3
+  window.d3 = null
+</script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<style type="text/css">
-
-
-</style>
+<style type="text/css"></style>
 </head>
 <body id="top">
 
@@ -52,9 +54,8 @@
 
     <div class="content"> 
       <h2>Launch your restaurant</h2>
-      <div  id="geo-container">
 
-        <div class="inputs">
+      <div class="inputs">
         <select class="multiselect" id="cuisines" multiple="multiple">
             
         </select>
@@ -65,12 +66,19 @@
 
         </div>
 
+      <div  id="geo-container">
+
         <div id="zip-list"></div>
 
         <div id="map"></div>
 
       </div>
-      <div id="zip-insight"></div>
+      <div id="zip-insight">
+        
+        <div id="zipchart"></div>
+        <div id="wordcloud"></div>
+
+      </div>
     </div>
 
 
@@ -94,6 +102,7 @@
 <script src="static/scripts/jquery.min.js"></script>
 <script src="static/scripts/jquery.backtotop.js"></script>
 <script src="static/scripts/jquery.mobilemenu.js"></script>
+<script src="static/scripts/cloud.js"></script>
 <script src="static/scripts/map.js"></script>
 <script src="static/scripts/visualization.js"></script>
 <script src="static/scripts/input.js"></script>

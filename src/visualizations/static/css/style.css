@@ -1,0 +1,57 @@
+#geo-container {
+  width: 1000px;
+  margin-top: 40px;
+  display: flex;
+}
+
+#zip-list{
+  width: 45%;
+}
+
+#map {
+  margin-right: 30px;
+  height: 400px;
+  width: 45%;
+}
+
+.zip-container {
+  fill:none;
+  height: 30px;
+  width: 100%;
+}
+
+
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes input {
+  display: block;
+}
+
+#checkboxes input:hover {
+  background-color: #1e90ff;
+}

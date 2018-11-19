@@ -18,9 +18,18 @@ function change_range(){
 */
 
 var cuisine = ["Chinese", "Pizza", "Sandwitches"]
-var input = d3.select("#selector").append('input').attr('class', 'input').attr('id', 'cuisine_input')
-.attr('type', 'text').attr('placeholder', 'input cuisine here')
-d3.select("#selector").append('input').attr('type', 'button').attr('class', 'button').attr('value', 'submit').on('click', update)
+var input = d3.select("#selector").append('input')
+    .attr('class', 'input')
+    .attr('id', 'cuisine_input')
+    .attr('type', 'text')
+    .attr('placeholder', 'input cuisine here');
+
+d3.select("#selector").append('input')
+    .attr('type', 'button')
+    .attr('class', 'button')
+    .attr('value', 'submit')
+    .attr('href', 'zip')
+    .on('click', update)
 
 function update(){
     var price = document.getElementById('price_selector').value;

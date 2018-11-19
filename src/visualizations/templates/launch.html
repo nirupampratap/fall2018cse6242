@@ -4,9 +4,10 @@
 <title>Launch</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<link href="./src/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="static/css/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all">
 <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style type="text/css">
 
 
@@ -21,16 +22,16 @@
   <header id="header" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-    <h1><a href="index.html">CSE 6242 - JSON Bourne</a></h1>
+    <h1><a href="/">CSE 6242 - JSON Bourne</a></h1>
     </div>
     <!-- ################################################################################################ -->
     <nav id="mainav" class="fl_right">
     <ul class="clear">
-      <li class="active"><a href="../index.html">Home</a></li>
+      <li class="active"><a href="/">Home</a></li>
       <li><a class="drop" href="#">Pages</a>
       <ul>
-        <li><a href="./improve.html">Improve</a></li>
-        <li><a href="./expand.html">Expand</a></li>
+        <li><a href="improve">Improve</a></li>
+        <li><a href="expand">Expand</a></li>
       </ul>
       </li>
       <li><a href="#">About us</a></li>
@@ -51,13 +52,35 @@
 
     <div class="content"> 
       <h2>Launch your restaurant</h2>
-      <div  id="selector">
-      </div>
-      <div  id="visualization-container">
-        <div id="zip-list">
-          
+      <div  id="geo-container">
+
+        <div class="inputs">
+        <form>
+        <div class="multiselect">
+          <div class="selectBox" onclick="showCheckboxes()">
+            <select>
+              <option>Select an option</option>
+            </select>
+            <div class="overSelect"></div>
+          </div>
+          <div id="checkboxes">
+
+          </div>
         </div>
+        </form>
+
+        <div class="submitButton">
+          <input type="submit" value="Submit">
+        </div>
+
+        </div>
+
+        <div id="zip-list"></div>
+
         <div id="map"></div>
+
+      </div>
+      <div id="zip-insight"></div>
     </div>
 
 
@@ -78,12 +101,12 @@
 
 
 <!-- JAVASCRIPTS -->
-<script src="../layout/scripts/jquery.min.js"></script>
-<script src="../layout/scripts/jquery.backtotop.js"></script>
-<script src="../layout/scripts/jquery.mobilemenu.js"></script>
-<script src="./src/js/map.js"></script>
-<script src="./src/js/visualization.js"></script>
-<script src="./src/js/selector.js"></script>
+<script src="static/scripts/jquery.min.js"></script>
+<script src="static/scripts/jquery.backtotop.js"></script>
+<script src="static/scripts/jquery.mobilemenu.js"></script>
+<script src="static/scripts/map.js"></script>
+<script src="static/scripts/visualization.js"></script>
+<script src="static/scripts/checkbox.js"></script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKCa0I2oUsTRJIglcvHqVQWciMLc0_wNI&callback=initMap"></script>
 </body>

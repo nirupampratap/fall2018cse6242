@@ -1,4 +1,6 @@
-function update_data(data){
+function updateData(data){
+
+	console.log(data);
 
 	d3.select("svg").remove();
 	
@@ -73,15 +75,3 @@ function update_data(data){
 function zipInsights(data){
 
 };
-
-$.ajax({
-	url: '/zip',
-	contentType: 'application/json;charset=UTF-8',
-	type: 'GET',
-	success: function(response){
-		console.log(response);
-	},
-	error: function(error){
-		console.log(error);
-	}
-});

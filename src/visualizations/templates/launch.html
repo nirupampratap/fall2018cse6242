@@ -55,22 +55,12 @@
       <div  id="geo-container">
 
         <div class="inputs">
-        <form>
-        <div class="multiselect">
-          <div class="selectBox" onclick="showCheckboxes()">
-            <select>
-              <option>Select an option</option>
-            </select>
-            <div class="overSelect"></div>
-          </div>
-          <div id="checkboxes">
-
-          </div>
-        </div>
-        </form>
+        <select class="multiselect" id="cuisines" multiple="multiple">
+            
+        </select>
 
         <div class="submitButton">
-          <input type="submit" value="Submit">
+          <input type="submit" id="submit" value="Submit">
         </div>
 
         </div>
@@ -106,7 +96,7 @@
 <script src="static/scripts/jquery.mobilemenu.js"></script>
 <script src="static/scripts/map.js"></script>
 <script src="static/scripts/visualization.js"></script>
-<script src="static/scripts/checkbox.js"></script>
+<script src="static/scripts/input.js"></script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKCa0I2oUsTRJIglcvHqVQWciMLc0_wNI&callback=initMap"></script>
 </body>

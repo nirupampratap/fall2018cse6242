@@ -4,13 +4,16 @@
 <title>Launch</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<link href="./src/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="static/css/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all">
+ <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+<script>
+  d3v3 = d3
+  window.d3 = null
+</script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<style type="text/css">
-
-
-</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style type="text/css"></style>
 </head>
 <body id="top">
 
@@ -21,16 +24,16 @@
   <header id="header" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-    <h1><a href="index.html">CSE 6242 - JSON Bourne</a></h1>
+    <h1><a href="/">CSE 6242 - JSON Bourne</a></h1>
     </div>
     <!-- ################################################################################################ -->
     <nav id="mainav" class="fl_right">
     <ul class="clear">
-      <li class="active"><a href="../index.html">Home</a></li>
+      <li class="active"><a href="/">Home</a></li>
       <li><a class="drop" href="#">Pages</a>
       <ul>
-        <li><a href="./improve.html">Improve</a></li>
-        <li><a href="./expand.html">Expand</a></li>
+        <li><a href="improve">Improve</a></li>
+        <li><a href="expand">Expand</a></li>
       </ul>
       </li>
       <li><a href="#">About us</a></li>
@@ -45,25 +48,42 @@
 
 <!-- main body -->
 <div class="wrapper row3">
-  <main class="hoc container clear"> 
-   
-
 
     <div class="content"> 
-      <h2>Launch your restaurant</h2>
-      <div  id="selector">
-      </div>
-      <div  id="visualization-container">
-        <div id="zip-list">
-          
+
+      <div class="inputs">
+        <h2>Pick your cuisines</h2>
+        <select class="multiselect" id="cuisines" multiple="multiple">
+            
+        </select>
+
+        <div class="submitButton">
+          <input type="submit" id="submit" value="GO !">
         </div>
-        <div id="map"></div>
+
+      </div>
+
+      <div class="visualization">
+        <div  id="geo-container">
+
+          <div id="zip-list"></div>
+
+          <div id="map"></div>
+
+        </div>
+        <div id="zip-insight">
+          
+          <div id="zipchart"></div>
+          <div id="wordcloud"></div>
+
+        </div>
+      </div>
     </div>
 
 
 
     <div class="clear"></div>
-  </main>
+
 </div>
 
 
@@ -78,12 +98,13 @@
 
 
 <!-- JAVASCRIPTS -->
-<script src="../layout/scripts/jquery.min.js"></script>
-<script src="../layout/scripts/jquery.backtotop.js"></script>
-<script src="../layout/scripts/jquery.mobilemenu.js"></script>
-<script src="./src/js/map.js"></script>
-<script src="./src/js/visualization.js"></script>
-<script src="./src/js/selector.js"></script>
+<script src="static/scripts/jquery.min.js"></script>
+<script src="static/scripts/jquery.backtotop.js"></script>
+<script src="static/scripts/jquery.mobilemenu.js"></script>
+<script src="static/scripts/cloud.js"></script>
+<script src="static/scripts/map.js"></script>
+<script src="static/scripts/visualization.js"></script>
+<script src="static/scripts/input.js"></script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKCa0I2oUsTRJIglcvHqVQWciMLc0_wNI&callback=initMap"></script>
 </body>

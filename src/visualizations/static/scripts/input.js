@@ -1,17 +1,15 @@
-cuisineList = ['Mexican', 'American (Traditional)', 'Pizza', 'American (New)',
-   'Burgers', 'Italian', 'Chinese', 'Salad', 'Sports Bars', 'Seafood',
-   'Japanese', 'Barbeque', 'Mediterranean', 'Sushi Bars', 'Asian Fusion',
-   'Steakhouses', 'Greek', 'Tex-Mex', 'Thai', 'Vietnamese', 'Indian',
-   'Middle Eastern', 'Southern', 'Latin American', 'Hawaiian', 'Korean',
-   'French', 'Caribbean', 'Pakistani', 'Ramen', 'New Mexican Cuisine',
-   'Modern European', 'Spanish', 'African', 'Cantonese', 'Persian/Iranian',
-   'Filipino', 'Cuban', 'Mongolian', 'Lebanese', 'Polish', 'Taiwanese',
-   'German', 'Turkish', 'Ethiopian', 'Brazilian', 'Afghan'];
+cuisineList = [{'Mexican' : 0, 'American (Traditional)': 0, 'Pizza': 0, 'American (New)': 0, 'Burgers': 0, 'Italian': 0, 
+'Chinese': 1, 'Salad': 0, 'Sports Bars': 0, 'Seafood': 0, 'Japanese': 0, 'Barbeque': 0, 'Mediterranean': 0, 
+'Sushi Bars': 0, 'Asian Fusion': 0, 'Steakhouses': 0, 'Greek': 0, 'Tex-Mex': 0, 'Thai': 0, 'Vietnamese': 0, 
+'Indian': 1, 'Middle Eastern': 0, 'Southern': 0, 'Latin American': 0, 'Hawaiian': 0, 'Korean': 0, 'French': 0, 
+'Caribbean': 0, 'Pakistani': 0, 'Ramen': 0, 'New Mexican Cuisine': 0, 'Modern European': 0, 'Spanish': 0, 
+'African': 0, 'Cantonese': 0, 'Persian/Iranian': 0, 'Filipino': 0, 'Cuban': 0, 'Mongolian': 0, 'Lebanese': 0, 
+'Polish': 0, 'Taiwanese': 0, 'German': 0, 'Turkish': 0, 'Ethiopian': 0,'Brazilian': 0, 'Afghan': 0}];
 
 
 
 d3.select("#cuisines").selectAll("option")
-	.data(cuisineList).enter()
+	.data(Object.keys(cuisineList[0])).enter()
 	.append("option")
 	.attr("id", function(d,i){return i})
 	.attr("value", function(d){return d})
@@ -19,20 +17,6 @@ d3.select("#cuisines").selectAll("option")
 
 d3.select("#submit")
 	.on("click", getData);
-
-
-var expanded = false;
-
-function showCheckboxes() {
-  var checkboxes = document.getElementById("checkboxes");
-  if (!expanded) {
-    checkboxes.style.display = "block";
-    expanded = true;
-  } else {
-    checkboxes.style.display = "none";
-    expanded = false;
-  }
-}
 
 function getData(){
 

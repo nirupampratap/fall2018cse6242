@@ -85,12 +85,13 @@ input:hover{
 
 #zipchart {
   height: 300px;
-  flex-grow: 1
+  max-width: 640px;
+  flex-grow: 1;
 }
 
 #wordcloud {
   height: 300px;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .multiselect {
   width: 100%;

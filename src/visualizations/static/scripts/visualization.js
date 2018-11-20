@@ -81,69 +81,96 @@ function updateData(data){
 
 function zipInsights(data){
 	
-	// Chart
-	d3.select(".chart").remove();
-	d3.select(".wordcloud").remove();
-	$(".zipSelectMessage").empty();
 
 	var width = 500,
 		height = 250,
-		marginLeft = 20;
+		marginLeft = 30;
 
-	var svg = d3.select("#zipchart").append("svg")
-		.attr("class", "chart")
-		.attr("width", width)
-		.attr("height", height)
-		.append("g");
+	d3.csv("static/data/zipcode_attributes.csv", function(zipdata) {
+	  	var zipcode = data.zipcode;
+	  	var barchartData = {};
+	  	zipdata.forEach(function(attribute){
+	  		var attr = attribute[""];
+	  		if (attribute[zipcode] != ""){
+	  			barchartData[attr] = attribute[zipcode];
+	  		}
+	  	})
 
-	height -= 30;
-	
-	var x = d3.scaleBand().rangeRound([0, width]).padding(.05);
+	  	barchartData = Object.entries(barchartData)
+	  		.sort((a, b) => b[1] - a[1])
+	  		.slice(0, 5)
+	  		.reduce(function(acc, element){
+		  		acc[element[0]] = element[1];
+		  		return acc;
+		  	}, {});
 
-	var y = d3.scaleLinear().range([height, 0]);
-
-	var xAxis = d3.axisBottom(x);
-
-	var yAxis = d3.axisLeft(y).ticks(10);
-
-
-
-	x.domain(Object.keys(data.attr));
-	y.domain([0, d3.max(Object.values(data.attr))]);
-
-	svg.append("g")
-		.attr("class", "x axis")
-		.attr("transform", "translate(" + marginLeft + "," + height + ")")
-		.call(xAxis)
-		.selectAll("text")
-		.style("text-anchor", "end")
-		.attr("dx", "-.8em")
-		.attr("dy", "-.55em")
-		.attr("transform", "rotate(-90)" );
-
-	svg.append("g")
-		.attr("transform", "translate(" + marginLeft + ",0)")
-		.attr("class", "y axis")
-		.call(yAxis)
-		.append("text")
-		.attr("transform", "rotate(-90)")
-		.attr("y", 6)
-		.attr("dy", ".71em")
-		.style("text-anchor", "end")
-		.text("# of restaurants");
-
-	svg.selectAll("bar")
-		.data(Object.entries(data.attr))
-		.enter().append("rect")
-		.style("fill", "steelblue")
-		.attr("x", function(d) { return x(d[0]) + marginLeft; })
-		.attr("width", x.bandwidth())
-		.attr("y", function(d) { return y(d[1]); })
-		.attr("height", function(d) { return height - y(d[1]); });
+		// Chart
+		d3.select(".chart").remove();
+		$(".zipSelectMessage").empty();
 
 
+		var svg = d3.select("#zipchart").append("svg")
+			.attr("class", "chart")
+			.attr("width", width)
+			.attr("height", height)
+			.append("g");
+
+		height -= 30;
+		
+		var x = d3.scaleBand().rangeRound([0, width - 50]).padding(.05);
+
+		var y = d3.scaleLinear().range([height, 0]);
+
+		var xAxis = d3.axisBottom(x);
+
+		var yAxis = d3.axisLeft(y).ticks(10);
+
+
+
+		x.domain(Object.keys(barchartData));
+		y.domain([0, d3.max(Object.values(barchartData))]);
+
+		svg.selectAll("bar")
+			.data(Object.entries(barchartData))
+			.enter().append("rect")
+			.attr("x", function(d) { return x(d[0]) + marginLeft; })
+			.attr("width", x.bandwidth())
+			.attr("y", function(d) { return y(d[1]); })
+			.attr("height", function(d) { return height - y(d[1]); })
+			.on("mouseover", function(){
+				d3.select(this).attr("fill", "#D8D8D8");
+			})
+			.on("mouseout", function(){
+				d3.select(this).attr("fill", "black");
+			});
+
+		svg.append("g")
+			.attr("class", "x axis")
+			.attr("transform", "translate(" + marginLeft + "," + height + ")")
+			.call(xAxis)
+			.selectAll("text")
+			.style("text-anchor", "center")
+			.style("font-weight", "bold")
+			.attr("dx", "-.8em")
+			.attr("dy", "-.55em")
+			.attr("transform", function(d, i){var padding = i%2 == 1 ? "10" : "20"; return "translate(0," + padding + ")"});
+			
+
+		svg.append("g")
+			.attr("transform", "translate(" + marginLeft + ",0)")
+			.attr("class", "y axis")
+			.call(yAxis)
+			.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", 6)
+			.attr("dy", ".71em")
+			.style("text-anchor", "end")
+			.text("Importance");
+	});
 
 	// Word cloud
+	
+	d3.select(".wordcloud").remove();
 	var fill = d3v3.scale.category20();
 
 	var word_entries = d3v3.entries(data.textReview);

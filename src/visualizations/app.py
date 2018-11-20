@@ -52,6 +52,32 @@ def zip():
 				"computer": 24,
 				"elevator": 30
 			}
+		 },
+		 {
+			"zipcode": 85014,
+			"score":56,
+			"attr":{
+				"attr1": 28,
+				"attr2": 79,
+				"attr3": 33
+			},
+			"textReview":{
+				"hello": 2,
+				"elephant": 28,
+				"car": 51,
+				"computer": 24,
+				"elevator": 30,
+				"banane": 2,
+				"kiwi": 28,
+				"poire": 51,
+				"pêche": 24,
+				"ananas": 30,
+				"avocat": 2,
+				"pomme": 28,
+				"mandarine": 51,
+				"mangue": 24,
+				"figue": 30
+			}
 		 }
 		]
 	)

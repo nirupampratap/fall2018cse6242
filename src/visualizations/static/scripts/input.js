@@ -1,4 +1,14 @@
-cuisineList = ["Pizza", "Chinese", "Indian"];
+cuisineList = ['Mexican', 'American (Traditional)', 'Pizza', 'American (New)',
+   'Burgers', 'Italian', 'Chinese', 'Salad', 'Sports Bars', 'Seafood',
+   'Japanese', 'Barbeque', 'Mediterranean', 'Sushi Bars', 'Asian Fusion',
+   'Steakhouses', 'Greek', 'Tex-Mex', 'Thai', 'Vietnamese', 'Indian',
+   'Middle Eastern', 'Southern', 'Latin American', 'Hawaiian', 'Korean',
+   'French', 'Caribbean', 'Pakistani', 'Ramen', 'New Mexican Cuisine',
+   'Modern European', 'Spanish', 'African', 'Cantonese', 'Persian/Iranian',
+   'Filipino', 'Cuban', 'Mongolian', 'Lebanese', 'Polish', 'Taiwanese',
+   'German', 'Turkish', 'Ethiopian', 'Brazilian', 'Afghan'];
+
+
 
 d3.select("#cuisines").selectAll("option")
 	.data(cuisineList).enter()

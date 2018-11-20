@@ -1,7 +1,15 @@
+d3.select("#zipchart").append("div").text("SELECT A ZIPCODE").attr("class", "zipSelectMessage");
+d3.select("#wordcloud").append("div").text("SELECT A ZIPCODE").attr("class", "zipSelectMessage");
+d3.select("#zip-list").append("div").text("SELECT CUISINES").attr("class", "cuisineSelectMessage");
+
 function updateData(data){
 
 	d3.select("svg").remove();
-	
+	$(".cuisineSelectMessage").empty();
+	d3.selectAll(".zipSelectMessage").text("SELECT A ZIPCODE");
+
+	data = data.sort(function(a, b){return b.score - a.score}).slice(0, 8);
+
 	var svg = d3.select("#zip-list")
 		.append("svg")
 		.attr("height", "300px")
@@ -10,7 +18,7 @@ function updateData(data){
 	var list = svg.selectAll(".zip")
 		.data(data).enter()
 		.append("g")
-		.attr("transform", function(d, i){return "translate(0," + i * 30 + ")"})
+		.attr("transform", function(d, i){return "translate(0," + ((i * 30) + 40) + ")"})
 		.on("mouseover", function(){
 			d3.select(this).style("cursor", "pointer");
 			d3.select(this).attr("opacity", 0.3);
@@ -75,10 +83,12 @@ function zipInsights(data){
 	
 	// Chart
 	d3.select(".chart").remove();
+	d3.select(".wordcloud").remove();
+	$(".zipSelectMessage").empty();
 
 	var width = 500,
-		height = 350,
-		marginRight = 20;
+		height = 250,
+		marginLeft = 20;
 
 	var svg = d3.select("#zipchart").append("svg")
 		.attr("class", "chart")
@@ -86,7 +96,7 @@ function zipInsights(data){
 		.attr("height", height)
 		.append("g");
 
-	height -= 50;
+	height -= 30;
 	
 	var x = d3.scaleBand().rangeRound([0, width]).padding(.05);
 
@@ -103,7 +113,7 @@ function zipInsights(data){
 
 	svg.append("g")
 		.attr("class", "x axis")
-		.attr("transform", "translate(" + marginRight + "," + height + ")")
+		.attr("transform", "translate(" + marginLeft + "," + height + ")")
 		.call(xAxis)
 		.selectAll("text")
 		.style("text-anchor", "end")
@@ -112,7 +122,7 @@ function zipInsights(data){
 		.attr("transform", "rotate(-90)" );
 
 	svg.append("g")
-		.attr("transform", "translate(" + marginRight + ",0)")
+		.attr("transform", "translate(" + marginLeft + ",0)")
 		.attr("class", "y axis")
 		.call(yAxis)
 		.append("text")
@@ -126,7 +136,7 @@ function zipInsights(data){
 		.data(Object.entries(data.attr))
 		.enter().append("rect")
 		.style("fill", "steelblue")
-		.attr("x", function(d) { return x(d[0]) + marginRight; })
+		.attr("x", function(d) { return x(d[0]) + marginLeft; })
 		.attr("width", x.bandwidth())
 		.attr("y", function(d) { return y(d[1]); })
 		.attr("height", function(d) { return height - y(d[1]); });
@@ -134,8 +144,6 @@ function zipInsights(data){
 
 
 	// Word cloud
-	d3.select(".wordcloud").remove();
-
 	var fill = d3v3.scale.category20();
 
 	var word_entries = d3v3.entries(data.textReview);
@@ -178,6 +186,4 @@ function zipInsights(data){
 	}
 
 	d3v3.layout.cloud().stop();
-      
-
 };

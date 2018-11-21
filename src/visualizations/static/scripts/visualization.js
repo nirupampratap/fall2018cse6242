@@ -56,8 +56,10 @@ function updateData(data){
 
 	var colors = ["#ff0000","#ff4000","#ff8000","#ffbf00","#ffff00","#bfff00","#80ff00","#40ff00"];
 
+	var maxScore = d3.max(data, function(d){return d.score});
+
 	var colorScale = d3.scaleQuantile()
-		.domain([0, d3.max(data, function(d){return d.score})])
+		.domain([0, maxScore])
 		.range(colors);
 
 	var bars = list.append("rect")
@@ -70,11 +72,12 @@ function updateData(data){
 		.attr("rx", 5)
 		.attr("ry", 5);
 
+
 	var scores = list.append("rect")
 		.attr("class", "score")
 		.attr("fill", function(d) { return colorScale(d.score); })
 		.attr("height", "20px")
-		.attr("width", function(d) {return (5 + (1.5 * d.score) + "%"); })
+		.attr("width", function(d) {return (5 + ((70/maxScore) * d.score) + "%"); })
 		.attr("x", 100)
 		.attr("y", 5)
 		.attr("rx", 5)
@@ -105,7 +108,7 @@ function zipInsights(data){
 
 	  	barchartData = Object.entries(barchartData)
 	  		.sort((a, b) => b[1] - a[1])
-	  		.slice(0, 5)
+	  		.slice(0, 6)
 	  		.reduce(function(acc, element){
 		  		acc[element[0]] = element[1];
 		  		return acc;
@@ -160,7 +163,7 @@ function zipInsights(data){
 			.style("font-weight", "bold")
 			.attr("dx", "-.8em")
 			.attr("dy", "-.55em")
-			.attr("transform", function(d, i){var padding = i%2 == 1 ? "10" : "20"; return "translate(0," + padding + ")"});
+			.attr("transform", function(d, i){var padding = i%2 == 1 ? "12" : "24"; return "translate(0," + padding + ")"});
 			
 
 		svg.append("g")

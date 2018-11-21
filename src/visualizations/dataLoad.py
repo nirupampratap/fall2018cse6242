@@ -9,7 +9,7 @@ warnings.simplefilter("ignore", category=DeprecationWarning)
 
 def load_zipdata():
     # Load Data
-    raw_data = pd.read_csv('../../../data/phoenix_business_ws_rw_ffall_merged2.csv', skipinitialspace=True)
+    raw_data = pd.read_csv('static/data/phoenix_business_ws_rw_ffall_merged2.csv', skipinitialspace=True)
 
     # Processing Data
     dframe = raw_data
@@ -31,7 +31,7 @@ def load_zipdata():
     zip_avg_ffall_revC_df = pd.DataFrame(zip_avg_ffall_revC_list, columns=['zipcode','avgrc','avgffall', 'avgffc'])
     zip_avg_ffall_revC_df.drop_duplicates(inplace = True)
 
-    pop_data = pd.read_csv('../../../data/arizon.csv', skipinitialspace=True)
+    pop_data = pd.read_csv('static/data/arizon.csv', skipinitialspace=True)
 
     selected_pop = pop_data[['zipcode', 'PCT0050002', 'PCT0050003', 'PCT0050004', 'PCT0050005', 'PCT0050006',
            'PCT0050007', 'PCT0050008', 'PCT0050009', 'PCT0050010', 'PCT0050011',
@@ -62,7 +62,7 @@ def load_zipdata():
 
 def load_zip_res_density():
     # Load Data
-    raw_data = pd.read_csv('../../../data/phoenix_business_ws_rw_ffall_merged2.csv', skipinitialspace=True)
+    raw_data = pd.read_csv('static/data/phoenix_business_ws_rw_ffall_merged2.csv', skipinitialspace=True)
 
     zip_pop_data = raw_data[['zipcode', 'total_pop']]
     zip_pop_data.drop_duplicates(inplace=True)

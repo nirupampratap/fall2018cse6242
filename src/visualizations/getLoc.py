@@ -90,4 +90,3 @@ def get_locations(cuvecjson):
 
 
 locations = get_locations(json.dumps(testDict))
-print(locations)

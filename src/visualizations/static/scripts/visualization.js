@@ -3,12 +3,19 @@ d3.select("#wordcloud").append("div").text("SELECT A ZIPCODE").attr("class", "zi
 d3.select("#zip-list").append("div").text("SELECT CUISINES").attr("class", "cuisineSelectMessage");
 
 function updateData(data){
-    console.log(data)
+
+    data = Object.values(data["zipcode"]).map(function(element, index){
+    	return {
+    		"zipcode":element,
+    		"score": Object.values(data["ffall"])[index]
+    	};
+    });
+
 	d3.select("svg").remove();
 	$(".cuisineSelectMessage").empty();
 	d3.selectAll(".zipSelectMessage").text("SELECT A ZIPCODE");
 
-	data = data.sort(function(a, b){return b.score - a.score}).slice(0, 8);
+	data = data.sort(function(a, b){return b.score - a.score}).slice(0, 7);
 
 	var svg = d3.select("#zip-list")
 		.append("svg")
@@ -50,7 +57,7 @@ function updateData(data){
 	var colors = ["#ff0000","#ff4000","#ff8000","#ffbf00","#ffff00","#bfff00","#80ff00","#40ff00"];
 
 	var colorScale = d3.scaleQuantile()
-		.domain([0, 90, d3.max(data, function(d){return d.score})])
+		.domain([0, d3.max(data, function(d){return d.score})])
 		.range(colors);
 
 	var bars = list.append("rect")
@@ -67,15 +74,15 @@ function updateData(data){
 		.attr("class", "score")
 		.attr("fill", function(d) { return colorScale(d.score); })
 		.attr("height", "20px")
-		.attr("width", function(d) {return (5 + d.score * 0.70 + "%"); })
+		.attr("width", function(d) {return (5 + (1.5 * d.score) + "%"); })
 		.attr("x", 100)
 		.attr("y", 5)
 		.attr("rx", 5)
 		.attr("ry", 5);
 
-	list.append("text").text(function(d){return d.score + "%"})
+	list.append("text").text(function(d){return d.score.toFixed(2)})
 		.attr("y", 20)
-		.attr("x", "90%")
+		.attr("x", "85%")
 		.attr("font-size", "11");
 };
 

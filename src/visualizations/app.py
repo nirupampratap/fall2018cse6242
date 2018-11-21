@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, json
 from getLoc import get_locations
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -18,7 +19,7 @@ def improve():
 @app.route('/zip', methods=['POST'])
 def zip():
 	cuisine_list = request.json["data"]
-	return json.dumps(get_locations(cuisine_list))
+	return get_locations(json.dumps(cuisine_list)).to_json()
 	"""
 	return json.dumps([
 		{
@@ -82,6 +83,7 @@ def zip():
 		]
 	)
 	"""
+	
 
 @app.route('/find_improve', methods=['POST'])
 def review():

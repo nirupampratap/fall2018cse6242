@@ -64,7 +64,7 @@ function update_accordion(data){
         var rest_length = data[i]['restaurants'].length
         var j = 0;
         for(j = 0; j < rest_length; j++){
-            d3.select("#panel_in_" + (i+1)).append('p').attr('id', 'paragraph_in_' + (i+1)).text(data[i]['restaurants'][j]['name'] + ' ' + data[i]['restaurants'][j]['location'] + ' ' + data[i]['restaurants'][j]['ratings'] + ' ' + data[i]['restaurants'][j]['price'])
+            d3.select("#panel_in_" + (i+1)).append('p').attr('id', 'paragraph_in_' + (i+1)).text(data[i]['restaurants'][j]['name'] + ',' + data[i]['restaurants'][j]['location'] + ',' + data[i]['restaurants'][j]['ratings'] + ',' + data[i]['restaurants'][j]['price'])
         }
     }
 }

@@ -42,5 +42,9 @@ function getData(){
 			console.log(error);
 		}
 	});
+
+	Object.keys(cuisineList[0]).forEach(function(element){
+		cuisineList[0][element] = 0;
+	});
 	
 }

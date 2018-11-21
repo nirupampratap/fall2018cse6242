@@ -9,7 +9,7 @@ warnings.simplefilter("ignore", category=DeprecationWarning)
 
 def load_zipdata():
     # Load Data
-    raw_data = pd.read_csv('../../../data/phoenix_business_ws_rw_ffall_merged2.csv', skipinitialspace=True)
+    raw_data = pd.read_csv('../../../data/arizona_business_ws_rw_ffall_merged.csv', skipinitialspace=True)
 
     # Processing Data
     dframe = raw_data
@@ -26,9 +26,11 @@ def load_zipdata():
     rowitem = []
 
     for ind, row in zip_means_df.iterrows():
-        zip_avg_ffall_revC_list.append([ind, row.iloc[65], row.iloc[63], row[66]])
+        zip_avg_ffall_revC_list.append([ind, zip_means_df["review_count"].loc[ind][0], zip_means_df["ffall"].loc[ind][0]])
+        #zip_avg_ffall_revC_list.append([ind, row.iloc[65], row.iloc[63], row[66]])
     
-    zip_avg_ffall_revC_df = pd.DataFrame(zip_avg_ffall_revC_list, columns=['zipcode','avgrc','avgffall', 'avgffc'])
+    #zip_avg_ffall_revC_df = pd.DataFrame(zip_avg_ffall_revC_list, columns=['zipcode','avgrc','avgffall', 'avgffc'])
+    zip_avg_ffall_revC_df = pd.DataFrame(zip_avg_ffall_revC_list, columns=['zipcode','avgrc','avgffall'])
     zip_avg_ffall_revC_df.drop_duplicates(inplace = True)
 
     pop_data = pd.read_csv('../../../data/arizon.csv', skipinitialspace=True)
@@ -44,9 +46,9 @@ def load_zipdata():
     final_data = joined_data.merge(zip_avg_ffall_revC_df, left_on="zipcode", right_on="zipcode", how="inner", 
                                 suffixes = ("_a","_b"))
     # Select columns
-    X = final_data.drop(columns=['business_id', 'CuisineCombined',
+    X = final_data.drop(columns=['business_id',
                                   'male','female','under_18','above_18','occupied_housing_units', 'review_count', 
-                                  'ffall', 'zipcode.1', 'median_age', 'zipcode.1','avgrc', 'ffall_category', 
+                                  'ffall', 'zipcode.1', 'median_age', 'zipcode.1','avgrc',
                                   'median_income', 'adjwhp','adjpafp','adjindp','adjasp','adjhwp','adjorp',
                                   'totalStars', 'ffall', 'Mexican', 'American (Traditional)', 'Pizza', 
                                   'American (New)', 'Burgers', 'Italian', 'Chinese', 'Salad', 'Sports Bars', 'Seafood', 
@@ -54,7 +56,7 @@ def load_zipdata():
                                   'Greek', 'Tex-Mex', 'Thai', 'Vietnamese', 'Indian', 'Middle Eastern', 'Southern', 'Latin American',
                                   'Hawaiian', 'Korean', 'French', 'Caribbean', 'Pakistani', 'Ramen', 'New Mexican Cuisine', 'Modern European', 
                                   'Spanish', 'African', 'Cantonese', 'Persian/Iranian', 'Filipino', 'Cuban', 'Mongolian',
-                                  'Lebanese', 'Polish', 'Taiwanese', 'German', 'Turkish', 'Ethiopian','Brazilian', 'Afghan','stars'])
+                                  'Lebanese', 'Polish', 'Taiwanese', 'German', 'Turkish', 'Ethiopian','Brazilian', 'Afghan','stars', 'Unnamed: 0'])
 
     X.drop_duplicates(inplace=True)
 
@@ -62,7 +64,7 @@ def load_zipdata():
 
 def load_zip_res_density():
     # Load Data
-    raw_data = pd.read_csv('../../../data/phoenix_business_ws_rw_ffall_merged2.csv', skipinitialspace=True)
+    raw_data = pd.read_csv('../../../data/arizona_business_ws_rw_ffall_merged.csv', skipinitialspace=True)
 
     zip_pop_data = raw_data[['zipcode', 'total_pop']]
     zip_pop_data.drop_duplicates(inplace=True)
@@ -114,9 +116,20 @@ def load_zip_res_density():
     for col in col_list:
         zip_pop_cu_agg[col] = zip_pop_cu_agg[col] * 1000 / zip_pop_cu_agg['total_pop']
 
-
     # For now have a random value set in place
-    zip_pop_cu_agg['popgrowth'] = zip_pop_cu_agg['zipcode'].apply(lambda x: random.uniform(0,1))
+    new_pop_est = pd.read_csv('../../../data/pop_estimate.csv', skipinitialspace=True)
+    zip_pop_cu_final = zip_pop_cu_agg.merge(new_pop_est, left_on="zipcode", right_on="zipcode", how="inner", suffixes = ("_a","_b"))
+    zip_pop_cu_final['popgrowth'] = 0.0
 
 
-    return zip_pop_cu_agg
+    for ind, row in zip_pop_cu_final.iterrows():
+        if(row.pop_estimate <= 0 ):
+            zip_pop_cu_final['pop_estimate'].loc[ind] = row.total_pop
+
+        zip_pop_cu_final['popgrowth'].loc[ind] = (row.pop_estimate - row.total_pop) / row.total_pop
+
+
+    zip_pop_cu_final.to_csv("./pop_check.csv")
+
+
+    return zip_pop_cu_final

@@ -9,7 +9,7 @@ warnings.simplefilter("ignore", category=DeprecationWarning)
 
 def load_model_data():
     # Load Data
-    raw_data = pd.read_csv('../../../data/phoenix_business_ws_rw_ffall_merged2.csv', skipinitialspace=True)
+    raw_data = pd.read_csv('../../../data/arizona_business_ws_rw_ffall_merged.csv', skipinitialspace=True)
 
     # Processing Data
     dframe = raw_data
@@ -26,9 +26,9 @@ def load_model_data():
     rowitem = []
 
     for ind, row in zip_means_df.iterrows():
-        zip_avg_ffall_revC_list.append([ind, row.iloc[65], row.iloc[63], row[66]])
-    
-    zip_avg_ffall_revC_df = pd.DataFrame(zip_avg_ffall_revC_list, columns=['zipcode','avgrc','avgffall', 'avgffc'])
+        zip_avg_ffall_revC_list.append([ind, zip_means_df["review_count"].loc[ind][0], zip_means_df["ffall"].loc[ind][0]])
+   
+    zip_avg_ffall_revC_df = pd.DataFrame(zip_avg_ffall_revC_list, columns=['zipcode','avgrc','avgffall']) 
     zip_avg_ffall_revC_df.drop_duplicates(inplace = True)
 
     pop_data = pd.read_csv('../../../data/arizon.csv', skipinitialspace=True)
@@ -47,10 +47,10 @@ def load_model_data():
     final_data['stars_avgrc'] = final_data['stars'] * final_data['avgffall'] * final_data['total_pop']
 
     # Select columns
-    X_train = final_data.drop(columns=['zipcode','business_id', 'CuisineCombined','total_pop',
+    X_train = final_data.drop(columns=['zipcode','business_id', 'total_pop', 'Unnamed: 0',
                                   'male','female','under_18','above_18','occupied_housing_units', 'review_count', 
                                   'ffall', 'zipcode.1', 'median_age', 'zipcode.1', 
-                                  'asian_pop', 'avgrc', 'ffall_category', 'white_pop', 'afam_pop', 'amindian_pop', 
+                                  'asian_pop', 'avgrc', 'white_pop', 'afam_pop', 'amindian_pop', 
                                   'hawaiian_pop', 'other_race', 'median_income', 'totalStars', 'stars_avgffc', 'ffall'])
     #dframe[['white_pop', 'afam_pop', 'amindian_pop', 'hawaiian_pop', 'other_race']]
     y_train = final_data['ffall']
@@ -58,7 +58,7 @@ def load_model_data():
     return X_train, y_train
 
 def build_xgboost_model(X_train, y_train):
-    xg_reg = xgb.XGBRegressor(objective ='reg:linear', colsample_bytree = 0.6, learning_rate = 0.1,
+    xg_reg = xgb.XGBRegressor(objective ='reg:linear', colsample_bytree = 0.9, learning_rate = 0.1,
                     max_depth = 5, alpha = 10, n_estimators = 50)
 
     xg_reg.fit(X_train, np.log(y_train))

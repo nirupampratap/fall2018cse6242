@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 testDict = [{'Mexican' : 0, 'American (Traditional)': 0, 'Pizza': 0, 'American (New)': 0, 'Burgers': 0, 'Italian': 0, 
-'Chinese': 1, 'Salad': 0, 'Sports Bars': 0, 'Seafood': 0, 'Japanese': 0, 'Barbeque': 0, 'Mediterranean': 0, 
+'Chinese': 0, 'Salad': 0, 'Sports Bars': 0, 'Seafood': 0, 'Japanese': 0, 'Barbeque': 0, 'Mediterranean': 0, 
 'Sushi Bars': 0, 'Asian Fusion': 0, 'Steakhouses': 0, 'Greek': 0, 'Tex-Mex': 0, 'Thai': 0, 'Vietnamese': 0, 
 'Indian': 1, 'Middle Eastern': 0, 'Southern': 0, 'Latin American': 0, 'Hawaiian': 0, 'Korean': 0, 'French': 0, 
 'Caribbean': 0, 'Pakistani': 0, 'Ramen': 0, 'New Mexican Cuisine': 0, 'Modern European': 0, 'Spanish': 0, 
@@ -39,7 +39,14 @@ def get_locations(cuvecjson):
     cuvedict = json.loads(cuvecjson)[0]
     zip_ffall = []
 
+    iteration_n = 0
+    print(len(zipdata))
+
     for ind, row in zipdata.iterrows():
+#        print(iteration_n)
+#        iteration_n+=1
+
+
         df = pd.DataFrame(row)
         df2 = df.T
         for key, val in cuvedict.items():
@@ -69,7 +76,7 @@ def get_locations(cuvecjson):
        'PCT0050007', 'PCT0050008', 'PCT0050009', 'PCT0050010', 'PCT0050011',
        'PCT0050012', 'PCT0050013', 'PCT0050014', 'PCT0050015', 'PCT0050016',
        'PCT0050017', 'PCT0050018', 'PCT0050019', 'PCT0050020', 'PCT0050021',
-       'PCT0050022', 'avgffall', 'avgffc', 'stars_avgrc']]
+       'PCT0050022', 'avgffall', 'stars_avgrc']]
 
         results = model.predict(selected_df)
         zip_ffall.append([int(row['zipcode']), np.exp(results[0]), 0])
@@ -83,6 +90,7 @@ def get_locations(cuvecjson):
     for ind,row in zip_ffall_df.iterrows():
         density, pop_g = get_density_zip_cu(row['zipcode'], cuvedict, zip_res_density_df)
         zip_ffall_df['rank'].loc[ind] = row['ffall'] * pop_g / density
+        #zip_ffall_df['rank'].loc[ind] = row['ffall']
 
     zip_ffall_df.sort_values(by='rank', inplace=True, ascending = False)
 
@@ -90,4 +98,5 @@ def get_locations(cuvecjson):
 
 
 locations = get_locations(json.dumps(testDict))
+locations.to_csv('./test.txt')
 print(locations)

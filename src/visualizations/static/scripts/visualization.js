@@ -3,7 +3,7 @@ d3.select("#wordcloud").append("div").text("SELECT A ZIPCODE").attr("class", "zi
 d3.select("#zip-list").append("div").text("SELECT CUISINES").attr("class", "cuisineSelectMessage");
 
 function updateData(data){
-
+    console.log(data)
 	d3.select("svg").remove();
 	$(".cuisineSelectMessage").empty();
 	d3.selectAll(".zipSelectMessage").text("SELECT A ZIPCODE");

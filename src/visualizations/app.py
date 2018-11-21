@@ -70,7 +70,7 @@ def zip():
 				"banane": 2,
 				"kiwi": 28,
 				"poire": 51,
-				"pêche": 24,
+				"peche": 24,
 				"ananas": 30,
 				"avocat": 2,
 				"pomme": 28,
@@ -81,6 +81,94 @@ def zip():
 		 }
 		]
 	)
+
+@app.route('/find_improve', methods=['POST'])
+def review():
+    business_ID = request.json['data']
+    #return get_review(business_ID)
+
+    return json.dumps([
+                       {
+                       'attribute': 'Delivery',
+                       'importance': 5,
+                       'percentage': '100%',
+                       'restaurants':[
+                                      {
+                                      'location': 123,
+                                      'name': 'randon',
+                                      'ratings': 3.6,
+                                      'price': '123'
+                                      },
+                                      
+                                      {
+                                      'location': 123,
+                                      'name': 'randon',
+                                      'ratings': 3.6,
+                                      'price': '123'
+                                      },
+                                      {
+                                      'location': 123,
+                                      'name': 'randon',
+                                      'ratings': 3.6,
+                                      'price': '123'
+                                      }
+                                      ]
+                       },
+                       
+                       {
+                       'attribute': 'Parking',
+                       'importance': 4,
+                       'percentage': '95%',
+                       'restaurants':[
+                                      {
+                                      'location': 123,
+                                      'name': 'randon',
+                                      'ratings': 3.6,
+                                      'price': '123'
+                                      },
+                                      
+                                      {
+                                      'location': 123,
+                                      'name': 'john papa',
+                                      'ratings': 3.6,
+                                      'price': '123'
+                                      },
+                                      {
+                                      'location': 123,
+                                      'name': 'pizza',
+                                      'ratings': 3.6,
+                                      'price': '123'
+                                      }
+                                      ]
+                       },
+                       
+                       {
+                       'attribute': 'Takeout',
+                       'importance': 3,
+                       'percentage': '30%',
+                       'restaurants':[
+                                      {
+                                      'location': 123,
+                                      'name': 'randon',
+                                      'ratings': 3.6,
+                                      'price': '$$$'
+                                      },
+                                      
+                                      {
+                                      'location': 123,
+                                      'name': 'randon',
+                                      'ratings': 3.6,
+                                      'price': '$$'
+                                      },
+                                      {
+                                      'location': 123,
+                                      'name': 'randon',
+                                      'ratings': 3.6,
+                                      'price': '12$3'
+                                      }
+                                      ]
+                       }
+                       ])
 
 if __name__ == '__main__':
 	app.run(debug = True)

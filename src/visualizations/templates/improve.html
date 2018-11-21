@@ -3,14 +3,15 @@
     <head>
         <title>Launch</title>
         <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-                <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-                    <link href="./src/css/style.css" rel="stylesheet" type="text/css" media="all">
-                        <script src="https://d3js.org/d3.v4.min.js"></script>
-                        <style type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="./static/css/layout.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./static/css/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./static/css/accordion.css" rel="stylesheet" type="text/css" media="all">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <style type="text/css">
                             
                             
-                            </style>
+        </style>
     </head>
     <body id="top">
         
@@ -21,16 +22,15 @@
             <header id="header" class="hoc clear">
             <!-- ################################################################################################ -->
             <div id="logo" class="fl_left">
-            <h1><a href="index.html">CSE 6242 - JSON Bourne</a></h1>
+            <h1><a href="./templates/index.html">CSE 6242 - JSON Bourne</a></h1>
             </div>
             <!-- ################################################################################################ -->
             <nav id="mainav" class="fl_right">
             <ul class="clear">
-            <li class="active"><a href="../index.html">Home</a></li>
+            <li class="active"><a href="./templates/index.html">Home</a></li>
             <li><a class="drop" href="#">Pages</a>
             <ul>
-            <li><a href="./launch.html">Launch</a></li>
-            <li><a href="./expand.html">Expand</a></li>
+            <li><a href="./templates/launch.html">Launch</a></li>
             </ul>
             </li>
             <li><a href="#">About us</a></li>
@@ -51,19 +51,43 @@
             
             <div class="content">
             <h2>Improve your Ratings</h2>
+            </div>
+            
             <div  id="selector">
-                <div id="auto_div">
+            </div>
+            <div id="accordion">
+            
+                <button class="accordion" id="accordion_1">Attribute 1</button>
+                <div class="panel"  id="panel_in_1">
+                <p class='chart' id="header"> name   location   rating   price </p>
+                    <p class='chart' id="paragraph_in_1"> restaurant information here </p>
+                    <p class='chart' id="paragraph_in_1"> restaurant information here </p>
                 </div>
-            </div>
-            
-            <div  id="geo">
-            <div id="zip-list">
-            
-            </div>
-            <div id="map"></div>
-            </div>
-            
-            
+
+                <button class="accordion" id="accordion_2">Attribute 2</button>
+                <div class="panel"  id="panel_in_2">
+                <p class='chart' id="header"> name   location   rating   price </p>
+                    <p class='chart' id="paragraph_in_2"> restaurant information here </p>
+                </div>
+                
+                <button class="accordion" id="accordion_3">Attribute 3</button>
+                <div class="panel"  id="panel_in_3">
+                <p class='chart' id="header"> name   location   rating   price </p>
+                    <p class='chart' id="paragraph_in_3"> restaurant information here </p>
+                </div>
+                
+                <button class="accordion" id="accordion_4">Attribute 4</button>
+                <div class="panel"  id="panel_in_4">
+                <p class='chart' id="header"> name   location   rating   price </p>
+                    <p class='chart' id="paragraph_in_4"> restaurant information here </p>
+                </div>
+                
+                <button class="accordion" id="accordion_5">Attribute 5</button>
+                <div class="panel"  id="panel_in_5">
+                <p class='chart' id="header"> name   location   rating   price </p>
+                    <p class='chart' id="paragraph_in_5"> restaurant information here </p>
+                </div>
+                </div>
             
             <div class="clear"></div>
             </main>
@@ -81,10 +105,10 @@
             
             
             <!-- JAVASCRIPTS -->
-            <script src="../layout/scripts/jquery.min.js"></script>
-            <script src="../layout/scripts/jquery.backtotop.js"></script>
-            <script src="../layout/scripts/jquery.mobilemenu.js"></script>
-            <script src="./src/js/input_improve.js"></script>
+            <script src="./static/scripts/jquery.min.js"></script>
+            <script src="./static/scripts/jquery.backtotop.js"></script>
+            <script src="./static/scripts/jquery.mobilemenu.js"></script>
+            <script src="./static/scripts/input_improve.js"></script>
             
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKCa0I2oUsTRJIglcvHqVQWciMLc0_wNI&callback=initMap"></script>
             </body>

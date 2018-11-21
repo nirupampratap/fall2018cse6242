@@ -93,7 +93,7 @@ input:hover{
   flex-grow: 1;
 }
 
-#wordcloud {
+#demographic {
   height: 300px;
   flex-grow: 1;
 }
@@ -119,7 +119,7 @@ svg {
   margin-bottom: 10px;
 }
 
-#zip-list, #map, #zipchart, #wordcloud{
+#zip-list, #map, #zipchart, #demographic{
   border-style: solid;
 }
 
@@ -135,6 +135,7 @@ svg {
   border-width: 5px 5px 10px 10px;
 }
 
-#wordcloud{
+#demographic{
   border-width: 5px 10px 10px 5px;
+  display: flex;
 }

@@ -1,5 +1,5 @@
 d3.select("#zipchart").append("div").text("SELECT A ZIPCODE").attr("class", "zipSelectMessage");
-d3.select("#wordcloud").append("div").text("SELECT A ZIPCODE").attr("class", "zipSelectMessage");
+d3.select("#demographic").append("div").text("SELECT A ZIPCODE").attr("class", "zipSelectMessage");
 d3.select("#zip-list").append("div").text("SELECT CUISINES").attr("class", "cuisineSelectMessage");
 
 function updateData(data){
@@ -91,13 +91,13 @@ function updateData(data){
 
 function zipInsights(data){
 	
+	var zipcode = data.zipcode;
 
 	var width = 500,
 		height = 250,
 		marginLeft = 30;
 
 	d3.csv("static/data/zipcode_attributes.csv", function(zipdata) {
-	  	var zipcode = data.zipcode;
 	  	var barchartData = {};
 	  	zipdata.forEach(function(attribute){
 	  		var attr = attribute[""];
@@ -178,8 +178,95 @@ function zipInsights(data){
 			.text("Importance");
 	});
 
+
+
+	d3.csv("static/data/phoenix.csv", function(demographicdata){
+		demographicdata = demographicdata.filter(e => parseInt(e.zipcode) == parseInt(zipcode))[0];
+		
+		demodata = {}
+		textdata = {}
+
+		Object.keys(demographicdata).forEach(function(key){
+			if (key.endsWith("pop") && !key.startsWith("total")){
+				demodata[key] = demographicdata[key];
+			} 
+			if (key == "median_age" || key == "median_income" || key == "housing_units" || key == "total_pop"){
+				textdata[key] = demographicdata[key];
+			}
+		});
+
+		d3.selectAll(".demographic").remove();
+
+		var svg = d3.select("#demographic").append("svg")
+			.attr("class", "demographic")
+			.attr("height", "250")
+			.attr("max-width", "175")
+			.append("g")
+			
+
+		svg.selectAll(".statistics")
+			.data(Object.keys(textdata)).enter()
+			.append("text")
+			.attr("y", function(d, i){return 70 + i * 30})
+			.attr("x", 30)
+			.text(function(d){return d + ": " + textdata[d]});
+
+		
+		// set the dimensions and margins of the graph
+		var width = 350,
+			height = 250;
+
+		// set the ranges
+		var y = d3.scaleBand()
+			.range([height, 0])
+			.padding(0.1);
+
+		var x = d3.scaleLinear()
+			.range([0, width - 40]);
+
+		// append the svg object to the body of the page
+		// append a 'group' element to 'svg'
+		// moves the 'group' element to the top left margin
+
+		var shift = 90
+
+		var svg = d3.select("#demographic").append("svg")
+			.attr("class", "demographic")
+			.attr("width", width + shift)
+			.attr("height", height + 30)
+			.append("g")
+			.attr("transform", "translate(" + shift + ",0)");
+
+		// Scale the range of the data in the domains
+
+		x.domain([0, d3.max(Object.values(demodata).map(e => +e).sort())]);
+		y.domain(Object.keys(demodata));
+		//y.domain([0, d3.max(data, function(d) { return d.sales; })]);
+
+		// append the rectangles for the bar chart
+		svg.selectAll(".bar")
+		  .data(Object.keys(demodata))
+		  .enter().append("rect")
+		  .attr("class", "bar")
+	      .attr("width", function(d) {console.log(demodata[d]); return x(demodata[d]); } )
+	      .attr("y", function(d) { return y(d); })
+	      .attr("height", y.bandwidth());
+
+		// add the x Axis
+		svg.append("g")
+		  .attr("transform", "translate(0," + height + ")")
+		  .call(d3.axisBottom(x).ticks(5));
+
+		// add the y Axis
+		svg.append("g")
+		  .call(d3.axisLeft(y));
+		
+
+	});
+
+
+	/*
 	// Word cloud
-	
 	d3.select(".wordcloud").remove();
 	var fill = d3v3.scale.category20();
 
@@ -223,4 +310,5 @@ function zipInsights(data){
 	}
 
 	d3v3.layout.cloud().stop();
+	*/
 };

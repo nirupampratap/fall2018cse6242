@@ -34,6 +34,7 @@ function getData(){
 		contentType: 'application/json;charset=UTF-8',
 		type: 'POST',
 		success: function(response){
+			console.log(response);
 			updateData(response);
 		},
 		error: function(error){

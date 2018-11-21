@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, json
+from getLoc import get_locations
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -16,71 +18,7 @@ def improve():
 @app.route('/zip', methods=['POST'])
 def zip():
 	cuisine_list = request.json["data"]
-	# return getZip(cuisine_list)
-
-
-
-	return json.dumps([
-		{
-			"zipcode": 85007,
-			"score":25,
-			"attr":{
-				"attr1": 24,
-				"attr2": 34,
-				"attr3": 6
-			},
-			"textReview":{
-				"hello": 23,
-				"elephant": 45,
-				"car": 6,
-				"computer": 10,
-				"elevator": 15
-			}
-		 },
-		 {
-			"zipcode": 85009,
-			"score":78,
-			"attr":{
-				"attr1": 10,
-				"attr2": 5,
-				"attr3": 43
-			},
-			"textReview":{
-				"hello": 2,
-				"elephant": 28,
-				"car": 51,
-				"computer": 24,
-				"elevator": 30
-			}
-		 },
-		 {
-			"zipcode": 85014,
-			"score":56,
-			"attr":{
-				"attr1": 28,
-				"attr2": 79,
-				"attr3": 33
-			},
-			"textReview":{
-				"hello": 2,
-				"elephant": 28,
-				"car": 51,
-				"computer": 24,
-				"elevator": 30,
-				"banane": 2,
-				"kiwi": 28,
-				"poire": 51,
-				"pêche": 24,
-				"ananas": 30,
-				"avocat": 2,
-				"pomme": 28,
-				"mandarine": 51,
-				"mangue": 24,
-				"figue": 30
-			}
-		 }
-		]
-	)
+	return json.dumps(get_locations(cuisine_list))
 
 if __name__ == '__main__':
 	app.run(debug = True)

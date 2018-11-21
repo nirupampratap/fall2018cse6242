@@ -1,0 +1,25 @@
+Visualization:
+Histogram of zip codes. Once we hover on the bar, we need to display the population division based on ethnicity.
+Cusine heatmap
+cusine vs restaurant
+rating vs restaurant location
+rating vs attributes (box plots)
+
+Finals:
+Flow chart for proposal
+Zip code level - how many restaurants vs attributes histogram
+Clustering & claaisfication plots - By kireeti
+UI - pic
+Box plot for each rating
+Word cloud for competitive restaurants. - With 2-3 sentences
+
+Population related distribution but our predicted zip code = histogram will do...
+Test results.
+Word cloud for competitive restaurants. - With 2-3 sentences
+
+
+
+Testing Model:
+Take few restaurants as a test data set. We will calculate average per cuisine for each zip code.
+Once we have a prediction, we will check if our predicted zip code has an average cuisine (for that particular cuisine) rating of
+greater than 3.

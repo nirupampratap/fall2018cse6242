@@ -85,7 +85,12 @@ def getTopics(restuarant_reviews,n):
     return topics,review_summary
 
 def getRestuarantTopics(business_id,n=5):
-    reviews_df=pd.read_csv('static/data/review_arizon.csv')
+    mylist = []
+    for chunk in pd.read_csv('static/data/review_arizon.csv', chunksize=20000):
+        mylist.append(chunk)
+    reviews_df = pd.concat(mylist, axis= 0)
+    del mylist
+
     positive_reviews=reviews_df[reviews_df.business_id==business_id][reviews_df.stars_y>=3]
     negative_reviews=reviews_df[reviews_df.business_id==business_id][ reviews_df.stars_y<3]
     positive_topics,pos_reviews=getTopics(positive_reviews,n)

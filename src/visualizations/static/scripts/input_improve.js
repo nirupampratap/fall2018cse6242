@@ -74,20 +74,20 @@ function update_accordion(data){
 function createWordcloud(data){
 
     var textReview = {};
-    data=data.flat(2);
-    console.log(data);
+    var reviews = [];
+
+    data = data.flat(2);
     data.forEach(function(element){
         element = element.split(" + ");
-        console.log(element);
         if (element.length > 1){
             element.forEach(function(e){
                 e = e.split("*");
                 textReview[e[1].replace(/\"/g,"")] = +e[0];
             })
+        } else {
+            reviews.push(element.join(" + "))
         }
     })
-
-    console.log(textReview);
 
     var width = 400,
         height = 300;
@@ -129,4 +129,14 @@ function createWordcloud(data){
             .text(function(d) { return d.key; });
     }
     d3v3.layout.cloud().stop();
+
+
+    d3.select("#reviews").append("svg")
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .selectAll(".review")
+        .data(reviews).enter()
+        .append("text")
+        .text(function(d){return d})
+        .attr("y", function(d, i){ return 10 + i * 20});
 }

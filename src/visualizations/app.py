@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, json
 from getLoc import get_locations
+from reviews import getReviews
 import pandas as pd
 
 app = Flask(__name__)
@@ -88,8 +89,8 @@ def zip():
 @app.route('/find_improve', methods=['POST'])
 def review():
     business_ID = request.json['data']
-    #return get_review(business_ID)
-
+    return json.dumps(getReviews(business_ID, 3))
+    """
     return json.dumps([
                        {
                        'attribute': 'Delivery',
@@ -172,6 +173,7 @@ def review():
                                       ]
                        }
                        ])
+    """
 
 if __name__ == '__main__':
 	app.run(debug = True)

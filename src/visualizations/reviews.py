@@ -85,7 +85,7 @@ def getTopics(restuarant_reviews,n):
     return topics,review_summary
 
 def getRestuarantTopics(business_id,n=5):
-    reviews_df=pd.read_csv('review_arizon.csv')
+    reviews_df=pd.read_csv('static/data/review_arizon.csv')
     positive_reviews=reviews_df[reviews_df.business_id==business_id][reviews_df.stars_y>=3]
     negative_reviews=reviews_df[reviews_df.business_id==business_id][ reviews_df.stars_y<3]
     positive_topics,pos_reviews=getTopics(positive_reviews,n)
@@ -124,5 +124,3 @@ def getReviews(restuarant_id,n):
     for restaurant in sim_restuarants:
         topics_reviews.append(getRestuarantTopics(restaurant,n))
     return topics_reviews
-
-print(getReviews('8NMf2dCmEGGKYR3SbMcnNA',3))

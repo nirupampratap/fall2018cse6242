@@ -1,5 +1,5 @@
 var selector = d3.select("#selector").append('select').attr('class', 'select').attr('id', 'business_id')
-var business_id = ['qerwerwer', '123123']
+var business_id = ['Select buisiness id', '8NMf2dCmEGGKYR3SbMcnNA']
 
 var options = selector.selectAll('option').data(business_id).enter().append('option').text(function(d){return d;})
 .on('change', onchange)
@@ -16,8 +16,7 @@ d3.selectAll(".accordion").on('click', expand)
 
 function update(){
     var business_id = document.getElementById('business_id').value;
-    console.log(business_id);
-    
+    d3.select("#selector").append("text").attr("id", "status").text("Processing ...")
     $.ajax({
            url: '/find_improve',
            dataType: "json",
@@ -27,9 +26,12 @@ function update(){
            contentType: 'application/json;charset=UTF-8',
            type: 'POST',
            success: function(response){
-                update_accordion(response)
+                d3.select("#status").text("Done")
+                //update_accordion(response);
+                createWordcloud(response);
            },
            error: function(error){
+                d3.select("#status").text("Error")
                 console.log(error)
            }
     })
@@ -67,4 +69,64 @@ function update_accordion(data){
             d3.select("#panel_in_" + (i+1)).append('p').attr('id', 'paragraph_in_' + (i+1)).text(data[i]['restaurants'][j]['name'] + ' ' + data[i]['restaurants'][j]['location'] + ' ' + data[i]['restaurants'][j]['ratings'] + ' ' + data[i]['restaurants'][j]['price'])
         }
     }
+}
+
+function createWordcloud(data){
+
+    var textReview = {};
+    data=data.flat(2);
+    console.log(data);
+    data.forEach(function(element){
+        element = element.split(" + ");
+        console.log(element);
+        if (element.length > 1){
+            element.forEach(function(e){
+                e = e.split("*");
+                textReview[e[1].replace(/\"/g,"")] = +e[0];
+            })
+        }
+    })
+
+    console.log(textReview);
+
+    var width = 400,
+        height = 300;
+
+    var fill = d3v3.scale.category20();
+    var word_entries = d3v3.entries(textReview);
+    var xScale = d3v3.scale.linear()
+        .domain([0, d3v3.max(word_entries, function(d) {
+            return d.value;
+        })
+        ])
+        .range([10,100]);
+    d3v3.layout.cloud().size([width, height])
+        .timeInterval(20)
+        .words(word_entries)
+        .fontSize(function(d) { return xScale(+d.value); })
+        .text(function(d) { return d.key; })
+        .rotate(function() { return ~~(Math.random() * 2) * 90; })
+        .font("Impact")
+        .on("end", draw)
+        .start();
+    function draw(words) {
+        d3v3.select("#wordcloud").append("svg")
+            .attr("class", "wordcloud")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + [width >> 1, height >> 1] + ")")
+            .selectAll("text")
+            .data(words)
+            .enter().append("text")
+            .style("font-size", function(d) { return xScale(d.value) + "px"; })
+            .style("font-family", "Impact")
+            .style("fill", function(d, i) { return fill(i); })
+            .attr("text-anchor", "middle")
+            .attr("transform", function(d) {
+                return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+            })
+            .text(function(d) { return d.key; });
+    }
+    d3v3.layout.cloud().stop();
 }

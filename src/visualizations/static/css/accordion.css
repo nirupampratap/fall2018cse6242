@@ -24,3 +24,7 @@ div.panel {
     overflow: hidden;
 }
 
+.content {
+    display:flex;
+}
+

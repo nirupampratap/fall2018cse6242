@@ -89,6 +89,8 @@ function createWordcloud(data){
         }
     })
 
+    reviews = reviews.filter(e => e.length < 100 && e.length > 1).slice(0, 6);
+
     var width = 400,
         height = 300;
 
@@ -138,5 +140,5 @@ function createWordcloud(data){
         .data(reviews).enter()
         .append("text")
         .text(function(d){return d})
-        .attr("y", function(d, i){ return 10 + i * 20});
+        .attr("y", function(d, i){ return 50 + i * 40});
 }

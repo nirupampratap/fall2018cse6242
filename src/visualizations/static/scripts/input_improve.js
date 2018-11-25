@@ -17,6 +17,7 @@ d3.selectAll(".accordion").on('click', expand)
 function update(){
     var business_id = document.getElementById('business_id').value;
     d3.select("#selector").append("text").attr("id", "status").text("Processing ...")
+    /*
     $.ajax({
            url: '/find_improve',
            dataType: "json",
@@ -26,12 +27,30 @@ function update(){
            contentType: 'application/json;charset=UTF-8',
            type: 'POST',
            success: function(response){
-                d3.select("#status").text("Done")
-                //update_accordion(response);
+                d3.select("#status").text("Done");
                 createWordcloud(response);
            },
            error: function(error){
                 d3.select("#status").text("Error")
+                console.log(error)
+           }
+    });
+    */
+    $.ajax({
+           url: '/similar',
+           dataType: "json",
+           data: JSON.stringify({
+                "data": business_id
+           }),
+           contentType: 'application/json;charset=UTF-8',
+           type: 'POST',
+           success: function(response){
+                d3.select("#status").text("Done");
+                console.log(response);
+                //update_accordion(response);
+           },
+           error: function(error){
+                d3.select("#status").text("Error");
                 console.log(error)
            }
     })

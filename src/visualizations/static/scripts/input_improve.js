@@ -47,7 +47,7 @@ function update(){
            success: function(response){
                 d3.select("#status").text("Done");
                 console.log(response);
-                //update_accordion(response);
+                update_accordion(response);
            },
            error: function(error){
                 d3.select("#status").text("Error");
@@ -80,12 +80,12 @@ function update_accordion(data){
     for(i = 0; i < length; i++){
         var accordion_id = "accordion_" + (i+1)
         console.log(accordion_id);
-        var accordion = d3.select("#" + accordion_id).text(data[i]['attribute'] + '          ' + data[i]['importance'] + '          ' + data[i]['percentage'])
+        var accordion = d3.select("#" + accordion_id).text(data[i]['attributes'] + '          ' + data[i]['importance'] + '          ' + data[i]['percentage'])
         var paragraph = d3.selectAll("#paragraph_in_" + (i+1)).remove();
         var rest_length = data[i]['restaurants'].length
         var j = 0;
         for(j = 0; j < rest_length; j++){
-            d3.select("#panel_in_" + (i+1)).append('p').attr('id', 'paragraph_in_' + (i+1)).text(data[i]['restaurants'][j]['name'] + ' ' + data[i]['restaurants'][j]['location'] + ' ' + data[i]['restaurants'][j]['ratings'] + ' ' + data[i]['restaurants'][j]['price'])
+            d3.select("#panel_in_" + (i+1)).append('p').attr('id', 'paragraph_in_' + (i+1)).text(data[i]['restaurants'][j]['name'] + ' ' + data[i]['restaurants'][j]['location'] + ' ' + data[i]['restaurants'][j]['rating'] + ' ' + data[i]['restaurants'][j]['review_count'] + ' ' + data[i]['restaurants'][j]['url'])
         }
     }
 }

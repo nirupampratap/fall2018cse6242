@@ -32,8 +32,29 @@ def review():
 @app.route('/similar', methods=['POST'])
 def similar():
     business_ID = request.json['data']
-    res = restaurant_case("Oh_mShbdmaoRX8iZVdE0vw")
-    return res
+    attributes, similar_rest = restaurant_case("Oh_mShbdmaoRX8iZVdE0vw")
+    res = []
+    #print(attributes);
+    #print(similar_rest);
+    for i in attributes:
+        temp = {}
+        temp['attributes'] = attributes[i]['attribute'];
+        temp['importance'] = attributes[i]['importance'];
+        temp['percentage'] = attributes[i]['percentage']
+        temp['restaurants'] = []
+        attribute = attributes[i]['attribute']
+        if attribute in similar_rest:
+            print(similar_rest[attribute], attribute)
+            for j in similar_rest[attribute]:
+                temp_rest = {}
+                temp_rest['url'] = similar_rest[attribute][j]['url']
+                temp_rest['rating'] = similar_rest[attribute][j]['rating']
+                temp_rest['review_count'] = similar_rest[attribute][j]['review_count']
+                temp_rest['name'] = similar_rest[attribute][j]['name']
+                temp_rest['location'] = similar_rest[attribute][j]['location']
+                temp['restaurants'].append(temp_rest)
+        res.append(temp)
+    return json.dumps(res)
 
 if __name__ == '__main__':
 	app.run(debug = True)

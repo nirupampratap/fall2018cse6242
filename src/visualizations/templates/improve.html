@@ -10,9 +10,9 @@
     <script>
       d3v3 = d3
       window.d3 = null
-    </script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <style type="text/css">
+  </script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <style type="text/css">
 
 
 </style>
@@ -48,51 +48,53 @@
     <!-- End Top Background Image Wrapper -->
 
     <!-- main body -->
-    <div class="visualization">            
-                <div  id="selector">
-                    <h2>Improve your Ratings</h2>
-                </div>
-                
-                <div id="accordion">
-
-                    <button class="accordion" id="accordion_1">Attribute 1</button>
-                    <div class="panel"  id="panel_in_1">
-                        <p class='chart' id="header"> name   location   rating   number of reviews url </p>
-                        <p class='chart' id="paragraph_in_1"> restaurant information here </p>
-                        <p class='chart' id="paragraph_in_1"> restaurant information here </p>
-                    </div>
-
-                    <button class="accordion" id="accordion_2">Attribute 2</button>
-                    <div class="panel"  id="panel_in_2">
-                        <p class='chart' id="header"> name   location   rating   number of reviews url </p>
-                        <p class='chart' id="paragraph_in_2"> restaurant information here </p>
-                    </div>
-                    
-                    <button class="accordion" id="accordion_3">Attribute 3</button>
-                    <div class="panel"  id="panel_in_3">
-                        <p class='chart' id="header"> name   location   rating   number of reviews url </p>
-                        <p class='chart' id="paragraph_in_3"> restaurant information here </p>
-                    </div>
-                    
-                    <button class="accordion" id="accordion_4">Attribute 4</button>
-                    <div class="panel"  id="panel_in_4">
-                        <p class='chart' id="header"> name   location   rating   number of reviews url </p>
-                        <p class='chart' id="paragraph_in_4"> restaurant information here </p>
-                    </div>
-                    
-                    <button class="accordion" id="accordion_5">Attribute 5</button>
-                    <div class="panel"  id="panel_in_5">
-                        <p class='chart' id="header"> name   location   rating   number of reviews url </p>
-                        <p class='chart' id="paragraph_in_5"> restaurant information here </p>
-                    </div>
-                </div>
-                
-                <div id="wordcloud"></div>
-                <div id="reviews"></div>
-
-            <div class="clear"></div>
+    <div class="content">
+    <div  id="selector">
+        <h2>Improve your Ratings</h2>
     </div>
 
+    <div class="visualization">            
+
+        <div id="accordion">
+
+            <button class="accordion" id="accordion_1">Attribute 1</button>
+            <div class="panel"  id="panel_in_1">
+                <p class='chart' id="header"> name   location   rating   number of reviews url </p>
+                <p class='chart' id="paragraph_in_1"> restaurant information here </p>
+            </div>
+
+            <button class="accordion" id="accordion_2">Attribute 2</button>
+            <div class="panel"  id="panel_in_2">
+                <p class='chart' id="header"> name   location   rating   number of reviews url </p>
+                <p class='chart' id="paragraph_in_2"> restaurant information here </p>
+            </div>
+
+            <button class="accordion" id="accordion_3">Attribute 3</button>
+            <div class="panel"  id="panel_in_3">
+                <p class='chart' id="header"> name   location   rating   number of reviews url </p>
+                <p class='chart' id="paragraph_in_3"> restaurant information here </p>
+            </div>
+
+            <button class="accordion" id="accordion_4">Attribute 4</button>
+            <div class="panel"  id="panel_in_4">
+                <p class='chart' id="header"> name   location   rating   number of reviews url </p>
+                <p class='chart' id="paragraph_in_4"> restaurant information here </p>
+            </div>
+
+            <button class="accordion" id="accordion_5">Attribute 5</button>
+            <div class="panel"  id="panel_in_5">
+                <p class='chart' id="header"> name   location   rating   number of reviews url </p>
+                <p class='chart' id="paragraph_in_5"> restaurant information here </p>
+            </div>
+        </div>
+
+        <div class="restaurant_reviews">
+        <div id="wordcloud"></div>
+        <div id="reviews"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>
 
     <div class="footer">
         <div id="copyright" class="hoc clear">

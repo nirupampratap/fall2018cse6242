@@ -1,24 +1,52 @@
 /* Style the buttons that are used to open and close the accordion panel */
+.content{
+    display:flex;
+}
+
+#selector{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #ffffff;
+    color: black;
+    border-style: solid;
+    padding-right: 5px;
+    border-width: 0px 3px 0px 0px;
+}
+
 .visualization{
     width: 100%;
     display:flex;
+    flex-direction: column;
     background-color: #ffffff;
+    align-items: center;
 }
 
 .accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 18px 50px 18px 50px;
     width: 100%;
-    text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    max-width: 500px;
+}
+
+.restaurant_reviews{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#reviews{
+    height: 300px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.accordion:hover {
     background-color: #ccc;
 }
 
@@ -30,7 +58,24 @@ div.panel {
     overflow: hidden;
 }
 
-.content {
-    display:flex;
+button{
+    text-align: center;
 }
 
+input {
+  background-color: #858585;
+  color: white;
+  border: 2px solid #858585; /* Green */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+input:hover{
+  background-color: white;
+  color: black;
+}

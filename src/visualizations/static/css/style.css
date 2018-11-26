@@ -31,7 +31,7 @@ input {
   display: inline-block;
   font-size: 16px;
   transition-duration: 0.4s;
-
+  cursor: pointer;
 }
 
 input:hover{

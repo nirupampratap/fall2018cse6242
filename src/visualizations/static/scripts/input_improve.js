@@ -1,5 +1,5 @@
 var selector = d3.select("#selector").append('select').attr('class', 'select').attr('id', 'business_id')
-var business_id = ['Select buisiness id', '8NMf2dCmEGGKYR3SbMcnNA']
+var business_id = ['Select buisiness id', 'D0VxKGcR19vKkoycyrNrHQ']
 
 var options = selector.selectAll('option').data(business_id).enter().append('option').text(function(d){return d;})
 .on('change', onchange)
@@ -9,15 +9,15 @@ var submit = d3.select("#selector")
             .append('input')
             .attr('type', 'button')
             .attr('class', 'button')
-            .attr('value', 'submit')
+            .attr('value', 'Submit')
             .on('click', update)
 
-d3.selectAll(".accordion").on('click', expand)
+d3.selectAll(".accordion").on('click', expand);
 
 function update(){
     var business_id = document.getElementById('business_id').value;
     d3.select("#selector").append("text").attr("id", "status").text("Processing ...")
-    /*
+    
     $.ajax({
            url: '/find_improve',
            dataType: "json",
@@ -35,7 +35,7 @@ function update(){
                 console.log(error)
            }
     });
-    */
+    
     $.ajax({
            url: '/similar',
            dataType: "json",
@@ -45,8 +45,6 @@ function update(){
            contentType: 'application/json;charset=UTF-8',
            type: 'POST',
            success: function(response){
-                d3.select("#status").text("Done");
-                console.log(response);
                 update_accordion(response);
            },
            error: function(error){
@@ -153,8 +151,8 @@ function createWordcloud(data){
 
 
     d3.select("#reviews").append("svg")
-        .attr("height", "100%")
-        .attr("width", "100%")
+        .attr("height", 300)
+        .attr("width", 600)
         .selectAll(".review")
         .data(reviews).enter()
         .append("text")

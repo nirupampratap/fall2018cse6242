@@ -27,12 +27,21 @@ def zip():
 @app.route('/find_improve', methods=['POST'])
 def review():
     business_ID = request.json['data']
-    return json.dumps(getReviews(business_ID, 3))
+    f = open("reviews.json", "r")
+    return json.dumps(json.load(f)[business_ID])
 
 @app.route('/similar', methods=['POST'])
 def similar():
     business_ID = request.json['data']
-    attributes, similar_rest = restaurant_case(business_ID)
+
+    bizidlist = ["_c3ixq9jYKxhLUB0czi0ug", "cKRMmytHxaSt8F0SMEzKqg", "8vA1d9_w4hBjOcrM7mNWFg", "sh69ApUyPhAltAMpv5vX3w", "bVl0_l6sCwjADKRLGxsXAw"]
+    simi = {}
+
+    f = open("similar.json", "r")
+    return json.dumps(json.load(f)[business_ID])
+
+    """
+    attributes, similar_rest = restaurant_case(bizid)
     res = []
     for i in attributes:
         temp = {}
@@ -51,7 +60,9 @@ def similar():
                 temp_rest['location'] = similar_rest[attribute][j]['location']
                 temp['restaurants'].append(temp_rest)
         res.append(temp)
+    simi[bizid] = res
     return pd.Series(res).to_json(orient='values')
+    """
 
 if __name__ == '__main__':
 	app.run(debug = True)

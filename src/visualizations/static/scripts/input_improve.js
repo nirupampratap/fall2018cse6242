@@ -1,5 +1,5 @@
 var selector = d3.select("#selector").append('select').attr('class', 'select').attr('id', 'business_id')
-var business_id = ['Select buisiness id', 'D0VxKGcR19vKkoycyrNrHQ']
+var business_id = ['Select buisiness id', "_c3ixq9jYKxhLUB0czi0ug", "cKRMmytHxaSt8F0SMEzKqg", "8vA1d9_w4hBjOcrM7mNWFg", "sh69ApUyPhAltAMpv5vX3w", "bVl0_l6sCwjADKRLGxsXAw"]
 
 var options = selector.selectAll('option').data(business_id).enter().append('option').text(function(d){return d;})
 .on('change', onchange)
@@ -78,7 +78,7 @@ function update_accordion(data){
     for(i = 0; i < length; i++){
         var accordion_id = "accordion_" + (i+1)
         console.log(accordion_id);
-        var accordion = d3.select("#" + accordion_id).text(data[i]['attributes'] + '          ' + data[i]['importance'] + '          ' + data[i]['percentage'])
+        var accordion = d3.select("#" + accordion_id).text(data[i]['attributes'] + '          : Importance score = ' + data[i]['percentage'])
         var paragraph = d3.selectAll("#paragraph_in_" + (i+1)).remove();
         var rest_length = data[i]['restaurants'].length
         var j = 0;
@@ -129,6 +129,7 @@ function createWordcloud(data){
         .on("end", draw)
         .start();
     function draw(words) {
+        d3.select("#wordcloud").select("svg").remove();
         d3v3.select("#wordcloud").append("svg")
             .attr("class", "wordcloud")
             .attr("width", width)
@@ -149,7 +150,7 @@ function createWordcloud(data){
     }
     d3v3.layout.cloud().stop();
 
-
+    d3.select("#reviews").select("svg").remove();
     d3.select("#reviews").append("svg")
         .attr("height", 300)
         .attr("width", 600)

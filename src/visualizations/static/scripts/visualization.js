@@ -100,7 +100,7 @@ function zipInsights(data){
 	d3.csv("static/data/zipcode_attributes.csv", function(zipdata) {
 	  	var barchartData = {};
 	  	zipdata.forEach(function(attribute){
-	  		var attr = attribute[""];
+	  		var attr = attribute["Attributes"];
 	  		if (attribute[zipcode] != ""){
 	  			barchartData[attr] = attribute[zipcode];
 	  		}
@@ -134,8 +134,6 @@ function zipInsights(data){
 		var xAxis = d3.axisBottom(x);
 
 		var yAxis = d3.axisLeft(y).ticks(10);
-
-
 
 		x.domain(Object.keys(barchartData));
 		y.domain([0, d3.max(Object.values(barchartData))]);
@@ -248,7 +246,7 @@ function zipInsights(data){
 		  .data(Object.keys(demodata))
 		  .enter().append("rect")
 		  .attr("class", "bar")
-	      .attr("width", function(d) {console.log(demodata[d]); return x(demodata[d]); } )
+	      .attr("width", function(d) { return x(demodata[d]); } )
 	      .attr("y", function(d) { return y(d); })
 	      .attr("height", y.bandwidth());
 

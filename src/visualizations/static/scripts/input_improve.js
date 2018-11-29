@@ -16,6 +16,7 @@ d3.selectAll(".accordion").on('click', expand);
 
 function update(){
     var business_id = document.getElementById('business_id').value;
+    d3.select("#status").remove();
     d3.select("#selector").append("text").attr("id", "status").text("Processing ...")
     
     $.ajax({
@@ -27,11 +28,13 @@ function update(){
            contentType: 'application/json;charset=UTF-8',
            type: 'POST',
            success: function(response){
-                d3.select("#status").text("Done");
+                d3.select("#status").remove();
+                d3.select("#selector").append("text").attr("id", "status").text("Done");
                 createWordcloud(response);
            },
            error: function(error){
-                d3.select("#status").text("Error")
+                d3.select("#status").remove()
+                d3.select("#selector").append("text").attr("id", "status").text("Error");
                 console.log(error)
            }
     });
@@ -45,10 +48,13 @@ function update(){
            contentType: 'application/json;charset=UTF-8',
            type: 'POST',
            success: function(response){
+                d3.select("#status").remove()
+                d3.select("#selector").append("text").attr("id", "status").text("Done");
                 update_accordion(response);
            },
            error: function(error){
-                d3.select("#status").text("Error");
+                d3.select("#status").remove()
+                d3.select("#selector").append("text").attr("id", "status").text("Error");
                 console.log(error)
            }
     })
@@ -66,7 +72,6 @@ function expand(){
 }
 
 function update_accordion(data){
-    console.log(data.length);
     var i = 0;
     var length = 0;
     if(data.length > 5){
@@ -76,11 +81,10 @@ function update_accordion(data){
         length = data.length;
     }
     for(i = 0; i < length; i++){
+
         var accordion_id = "accordion_" + (i+1)
-        console.log(accordion_id);
-        var accordion = d3.select("#" + accordion_id).text(data[i]['attributes'] + '          : Importance score = ' + data[i]['percentage'])
+        var accordion = d3.select("#" + accordion_id).style("visibility", "visible").text(data[i]['attributes'] + '          : Importance score = ' + data[i]['percentage'])
         columns = ['name', 'location', 'rating', 'review_count', 'url']
-        console.log(data[i]['restaurants'])
         d3.selectAll('#row' + (i+1)).remove()
         var rows = d3.select("#table" + (i+1)).data(data[i]['restaurants']).append('tr').attr('id', 'row' + (i+1))
         var cells = rows.selectAll('#row' + (i+1))
@@ -96,6 +100,10 @@ function update_accordion(data){
               return d.value;
               });
         
+    }
+    for (i = length; i < 5; i++){
+        var accordion_id = "accordion_" + (i+1)
+        var accordion = d3.select("#" + accordion_id).style("visibility", "hidden");
     }
 }
 

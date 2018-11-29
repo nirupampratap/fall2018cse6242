@@ -34,6 +34,10 @@
     max-width: 500px;
 }
 
+.panel{
+  color:black;
+}
+
 .restaurant_reviews{
     display:flex;
     flex-direction: row;

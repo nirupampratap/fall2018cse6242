@@ -79,12 +79,22 @@ function update_accordion(data){
         var accordion_id = "accordion_" + (i+1)
         console.log(accordion_id);
         var accordion = d3.select("#" + accordion_id).text(data[i]['attributes'] + '          : Importance score = ' + data[i]['percentage'])
-        var paragraph = d3.selectAll("#paragraph_in_" + (i+1)).remove();
-        var rest_length = data[i]['restaurants'].length
-        var j = 0;
-        for(j = 0; j < rest_length; j++){
-            d3.select("#panel_in_" + (i+1)).append('p').attr('id', 'paragraph_in_' + (i+1)).text(data[i]['restaurants'][j]['name'] + ' ' + data[i]['restaurants'][j]['location'] + ' ' + data[i]['restaurants'][j]['rating'] + ' ' + data[i]['restaurants'][j]['review_count'] + ' ' + data[i]['restaurants'][j]['url'])
-        }
+        columns = ['name', 'location', 'rating', 'review_count', 'url']
+        console.log(data[i]['restaurants'])
+        var rows = d3.select("#table" + (i+1)).data(data[i]['restaurants']).append('tr').attr('id', 'row' + (i+1))
+        var cells = rows.selectAll('#row' + (i+1))
+        .data(function (row) {
+              return columns.map(function (column) {
+                                 return {column: column, value: row[column]};
+                                 });
+              })
+        .enter()
+        .append('td')
+        .text(function (d) {
+              console.log('d.value')
+              return d.value;
+              });
+        
     }
 }
 

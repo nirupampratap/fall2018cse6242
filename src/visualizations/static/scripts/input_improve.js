@@ -81,6 +81,7 @@ function update_accordion(data){
         var accordion = d3.select("#" + accordion_id).text(data[i]['attributes'] + '          : Importance score = ' + data[i]['percentage'])
         columns = ['name', 'location', 'rating', 'review_count', 'url']
         console.log(data[i]['restaurants'])
+        d3.selectAll('#row' + (i+1)).remove()
         var rows = d3.select("#table" + (i+1)).data(data[i]['restaurants']).append('tr').attr('id', 'row' + (i+1))
         var cells = rows.selectAll('#row' + (i+1))
         .data(function (row) {
